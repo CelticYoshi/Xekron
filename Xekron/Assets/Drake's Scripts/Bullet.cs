@@ -26,4 +26,17 @@ public class Bullet : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.CompareTag("Enemy"))
+        {
+            Debug.Log("I hit the enemy");
+            Destroy(this.gameObject);
+
+        }
+
+        //if bullet hits any object other than the target
+        Destroy(this.gameObject);
+    }
 }
