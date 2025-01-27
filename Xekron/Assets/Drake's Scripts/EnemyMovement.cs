@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemyMovement : MonoBehaviour
 {
@@ -11,11 +12,13 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private Transform _player;
     [SerializeField] private Animator _enemyAnimation;
     [SerializeField] private Rigidbody _enemyRb;
+    private NavMeshAgent navMeshAgent;
 
     // Start is called before the first frame update
     void Start()
     {
         _startingPosition = transform.position;
+        navMeshAgent = GetComponent<NavMeshAgent>();
     }
 
     // Update is called once per frame
@@ -29,6 +32,8 @@ public class EnemyMovement : MonoBehaviour
             {
                 _enemyRb.velocity = movementDirection * speed;
                 transform.LookAt(_player);
+                navMeshAgent.SetDestination(_player.position);
             }
-            
+
+    
 }}
