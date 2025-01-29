@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 1f;
+    public float rotationSpeed;
     public float jumpForce = 10f;
     public float gravityModifier = 1f;
     public float mouseSensitivity = 1f;
@@ -17,6 +18,8 @@ public class PlayerController : MonoBehaviour
     private bool _canPlayerJump;
     private Vector3 _moveInput;
     private CharacterController _characterController;
+    [SerializeField] private Animator _playerAnimation;
+    [SerializeField] private Transform _player;
     
 
     // Start is called before the first frame update
@@ -28,7 +31,10 @@ public class PlayerController : MonoBehaviour
 
     // Update is called once per frame
     void Update()
+
     {
+        Vector3 movementDirection = (_player.position - transform.position).normalized;
+
         //Player jump setup
         float yVelocity = _moveInput.y;
 
@@ -91,8 +97,21 @@ public class PlayerController : MonoBehaviour
             //Create the bullet
             Instantiate(bullet, firePoint.position, firePoint.rotation);
 
-            
+                if (movementDirection != Vector3.zero)
+        {
+            _playerAnimation.SetBool("IsMoving", true);
+
+            Quaternion toRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
+
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
         }
+        else
+        {
+            _playerAnimation.SetBool("IsMoving", false);
+        }
+        }
+
+        
     }
 }
 
