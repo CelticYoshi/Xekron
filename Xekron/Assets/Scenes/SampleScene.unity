@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &300261035 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 957358805128080527, guid: f0cdf62f5e0234d698cfdbb229399f8b, type: 3}
+  m_PrefabInstance: {fileID: 1075913487}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &554498249
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -131,6 +136,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3627470309944724834, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: f742a2c23ba9e4aef80ebe8c31fa6fb2, type: 2}
+    - target: {fileID: 4257895611433980653, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+      propertyPath: speed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4257895611433980653, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 300261035}
+    - target: {fileID: 4257895611433980653, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+      propertyPath: rangeValue
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4257895611433980653, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+      propertyPath: _enemyAnimation
+      value: 
+      objectReference: {fileID: 1225361384}
     - target: {fileID: 7857082100942668217, guid: 92b107729b83542b19c440f53ec39316, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -680,7 +705,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 2
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -692,6 +717,11 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!95 &1225361384 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3627470309944724834, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+  m_PrefabInstance: {fileID: 554498249}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1555606108
 GameObject:
   m_ObjectHideFlags: 0

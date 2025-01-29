@@ -7,6 +7,7 @@ public class EnemyMovement : MonoBehaviour
 {
     public float speed = 1f;
     public float rangeValue = 5f;
+    public float rotationSpeed;
     private Vector3 _startingPosition;
     [SerializeField] private bool _isAttacking;
     [SerializeField] private Transform _player;
@@ -34,6 +35,19 @@ public class EnemyMovement : MonoBehaviour
                 transform.LookAt(_player);
                 navMeshAgent.SetDestination(_player.position);
             }
+         if (movementDirection != Vector3.zero)
+        {
+            _enemyAnimation.SetBool("IsMoving", true);
+
+            Quaternion toRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
+
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+        }
+        else
+        {
+            _enemyAnimation.SetBool("IsMoving", false);
+        }
+        
 
     
 }}
