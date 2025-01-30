@@ -97,18 +97,6 @@ public class PlayerController : MonoBehaviour
             //Create the bullet
             Instantiate(bullet, firePoint.position, firePoint.rotation);
 
-                if (movementDirection != Vector3.zero)
-        {
-            _playerAnimation.SetBool("IsMoving", true);
-
-            Quaternion toRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
-
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
-        }
-        else
-        {
-            _playerAnimation.SetBool("IsMoving", false);
-        }
         }
 
         
