@@ -20,6 +20,8 @@ public class EnemyMovement : MonoBehaviour
     {
         _startingPosition = transform.position;
         navMeshAgent = GetComponent<NavMeshAgent>();
+        _enemyAnimation.SetBool("IsMoving", false);
+
     }
 
     // Update is called once per frame
@@ -34,6 +36,11 @@ public class EnemyMovement : MonoBehaviour
                 _enemyRb.velocity = movementDirection * speed;
                 transform.LookAt(_player);
                 navMeshAgent.SetDestination(_player.position);
+                 _enemyAnimation.SetBool("IsInRange", true);
+            }
+            else
+            {
+                 _enemyAnimation.SetBool("IsInRange", false);
             }
          if (movementDirection != Vector3.zero)
         {
