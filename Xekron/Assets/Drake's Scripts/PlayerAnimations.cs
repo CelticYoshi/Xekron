@@ -59,6 +59,8 @@ public class PlayerAnimations : MonoBehaviour
         {
             _animator.SetBool(name:"WalkLeft", false);
         }
+
+        _animator.SetBool("IsJumping", _player.PlayerIsJumping());
     }
     }
 
