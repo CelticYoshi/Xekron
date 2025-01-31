@@ -12,7 +12,7 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private bool _isAttacking;
     [SerializeField] private Transform _player;
     [SerializeField] private Animator _enemyAnimation;
-    [SerializeField] private Rigidbody _enemyRb;
+    //[SerializeField] private Rigidbody _enemyRb;
     private NavMeshAgent navMeshAgent;
 
     // Start is called before the first frame update
@@ -20,8 +20,6 @@ public class EnemyMovement : MonoBehaviour
     {
         _startingPosition = transform.position;
         navMeshAgent = GetComponent<NavMeshAgent>();
-        _enemyAnimation.SetBool("IsMoving", false);
-
     }
 
     // Update is called once per frame
@@ -33,7 +31,7 @@ public class EnemyMovement : MonoBehaviour
         //Debug.Log("Distance" + distance);
         if(distance < rangeValue)
             {
-                _enemyRb.velocity = movementDirection * speed;
+                //_enemyRb.velocity = movementDirection * speed;
                 transform.LookAt(_player);
                 navMeshAgent.SetDestination(_player.position);
                  _enemyAnimation.SetBool("IsInRange", true);
