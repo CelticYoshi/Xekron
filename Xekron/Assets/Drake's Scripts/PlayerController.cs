@@ -15,18 +15,19 @@ public class PlayerController : MonoBehaviour
     public Transform theCamera;
     public Transform groundCheckpoint;
     public LayerMask whatIsGround;
+    public AudioClip shootSound;
     private bool _canPlayerJump;
     private Vector3 _moveInput;
     private CharacterController _characterController;
     [SerializeField] private Animator _playerAnimation;
     [SerializeField] private Transform _player;
-    
+    private AudioSource playerAudio;
 
     // Start is called before the first frame update
     void Start()
     {
         _characterController = GetComponent<CharacterController>();
-        
+        playerAudio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -97,7 +98,7 @@ public class PlayerController : MonoBehaviour
             
             //Create the bullet
             Instantiate(bullet, firePoint.position, firePoint.rotation);
-
+            playerAudio.PlayOneShot(shootSound, 1.0f);   
         }
 
     }

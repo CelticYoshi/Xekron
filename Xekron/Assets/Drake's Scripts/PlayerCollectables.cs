@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class PlayerCollectables : MonoBehaviour
 {
+    public AudioClip collectSound;
+
+    private AudioSource playerAudio;
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerAudio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -21,6 +24,7 @@ public class PlayerCollectables : MonoBehaviour
         if(other.gameObject.CompareTag("Collectable"))
         {
              other.gameObject.SetActive(false);
+             playerAudio.PlayOneShot(collectSound, 1.0f);    
     }
 }
 }
