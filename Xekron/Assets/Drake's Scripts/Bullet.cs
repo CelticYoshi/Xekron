@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    public AudioClip EnemyHurt;
     public float moveSpeed = 10f;
     public float lifeTime = 2f;
     private Rigidbody _rigidbody;
+    private AudioSource _enemySound;
 
     // Start is called before the first frame update
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody>();
+        _enemySound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -32,6 +35,7 @@ public class Bullet : MonoBehaviour
         if(other.gameObject.CompareTag("Enemy"))
         {
             Debug.Log("I hit the enemy");
+            _enemySound.PlayOneShot(EnemyHurt, 1.0f);
             Destroy(this.gameObject);
 
         }
