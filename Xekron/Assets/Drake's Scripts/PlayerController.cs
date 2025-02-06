@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class PlayerController : MonoBehaviour
     public Transform groundCheckpoint;
     public LayerMask whatIsGround;
     public AudioClip shootSound;
+    public AudioClip jumpSound;
+    public AudioClip winSound;
     private bool _canPlayerJump;
     private Vector3 _moveInput;
     private CharacterController _characterController;
@@ -68,6 +71,7 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space) && _canPlayerJump)
         {
             _moveInput.y = jumpForce;
+            playerAudio.PlayOneShot(jumpSound, 1.0f); 
         }
 
         _characterController.Move(_moveInput * Time.deltaTime);
@@ -98,13 +102,24 @@ public class PlayerController : MonoBehaviour
             
             //Create the bullet
             Instantiate(bullet, firePoint.position, firePoint.rotation);
-            playerAudio.PlayOneShot(shootSound, 1.0f);   
+            playerAudio.PlayOneShot(shootSound, .5f);   
         }
 
     }
     public bool PlayerIsJumping()
         {
             return _characterController.isGrounded;
+            
+        }
+
+        void OnTriggerEnter(Collider other)
+        {
+         if(other.gameObject.CompareTag("Portal"))
+        {
+             playerAudio.PlayOneShot(winSound, 1.0f);
+             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);     
+        }
+    
         }
 }
 
