@@ -30,17 +30,17 @@ public class Bullet : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter(Collider other)
-    {
-        if(other.gameObject.CompareTag("Enemy"))
-        {
-            Debug.Log("I hit the enemy");
-            _enemySound.PlayOneShot(EnemyHurt, 1.0f);
-            Destroy(this.gameObject);
+    //void OnTriggerEnter(Collider other)
+    //{
+        //if(other.gameObject.CompareTag("Enemy"))
+        //{
+            //Debug.Log("I hit the enemy");
+            //_enemySound.PlayOneShot(EnemyHurt, 1.0f);
+            //Destroy(this.gameObject);
 
-        }
+        //}
 
         //if bullet hits any object other than the target
-        Destroy(this.gameObject);
-    }
+        //Destroy(this.gameObject);
+    //}
 }

@@ -2250,6 +2250,7 @@ GameObject:
   - component: {fileID: 7584973570540654775}
   - component: {fileID: 5968149153614374065}
   - component: {fileID: 3126091384957087422}
+  - component: {fileID: 3913399880543421924}
   m_Layer: 0
   m_Name: SM_Chr_Scarecrow_01
   m_TagString: Enemy
@@ -2289,7 +2290,7 @@ Animator:
   m_GameObject: {fileID: 9015020564793688450}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 0125309e38bea8a48bc578cf8f220634, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f742a2c23ba9e4aef80ebe8c31fa6fb2, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -2314,10 +2315,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   rangeValue: 10
-  _isAttacking: 0
-  _player: {fileID: 957358805128080527, guid: f0cdf62f5e0234d698cfdbb229399f8b, type: 3}
-  _enemyAnimation: {fileID: 0}
-  _enemyRb: {fileID: 5968149153614374065}
+  rotationSpeed: 0
+  _isAttacking: 1
+  _player: {fileID: 0}
+  _enemyAnimation: {fileID: 3647012777423081356}
 --- !u!54 &5968149153614374065
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2368,6 +2369,28 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!195 &3913399880543421924
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9015020564793688450}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &9068477340238651753
 GameObject:
   m_ObjectHideFlags: 0

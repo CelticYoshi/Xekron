@@ -5,10 +5,12 @@ using UnityEngine.AI;
 
 public class EnemyMovement : MonoBehaviour
 {
+    public AudioClip EnemyHurt;
     public float speed = 1f;
     public float rangeValue = 5f;
     public float rotationSpeed;
     private Vector3 _startingPosition;
+    private AudioSource _enemySound;
     [SerializeField] private bool _isAttacking;
     [SerializeField] private Transform _player;
     [SerializeField] private Animator _enemyAnimation;
@@ -20,6 +22,7 @@ public class EnemyMovement : MonoBehaviour
     {
         _startingPosition = transform.position;
         navMeshAgent = GetComponent<NavMeshAgent>();
+        _enemySound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -52,7 +55,15 @@ public class EnemyMovement : MonoBehaviour
         {
             _enemyAnimation.SetBool("IsMoving", false);
         }
-        
+}
+void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.CompareTag("Bullet"))
+        {
+            Debug.Log("I hit the enemy");
+            _enemySound.PlayOneShot(EnemyHurt, 1.0f);
+            //Destroy(this.gameObject);
 
-    
-}}
+        }}
+}
+

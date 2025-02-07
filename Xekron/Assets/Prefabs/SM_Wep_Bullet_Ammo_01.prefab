@@ -56,6 +56,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wep_Bullet_Ammo_01
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eb6dc4627824f4f5494e23a7a1097bcd, type: 3}
+      propertyPath: m_TagString
+      value: Bullet
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -68,10 +72,7 @@ PrefabInstance:
       addedObject: {fileID: -8420786398140131144}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: eb6dc4627824f4f5494e23a7a1097bcd, type: 3}
       insertIndex: -1
-      addedObject: {fileID: -4753292318282344093}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: eb6dc4627824f4f5494e23a7a1097bcd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5217088191054883131}
+      addedObject: {fileID: 3114199897085797551}
   m_SourcePrefab: {fileID: 100100000, guid: eb6dc4627824f4f5494e23a7a1097bcd, type: 3}
 --- !u!1 &2976454084439298591 stripped
 GameObject:
@@ -120,8 +121,8 @@ MonoBehaviour:
   EnemyHurt: {fileID: 8300000, guid: 6a82b5e29ae3e49b9b1df7d78390a67a, type: 3}
   moveSpeed: 10
   lifeTime: 2
---- !u!64 &-4753292318282344093
-MeshCollider:
+--- !u!65 &3114199897085797551
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -135,106 +136,9 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 495961275678471084, guid: eb6dc4627824f4f5494e23a7a1097bcd, type: 3}
---- !u!82 &5217088191054883131
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2976454084439298591}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6a82b5e29ae3e49b9b1df7d78390a67a, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
+  serializedVersion: 3
+  m_Size: {x: 0.0119690085, y: 0.0103654675, z: 0.06947969}
+  m_Center: {x: 0.0000000023283064, y: 0.000000009313226, z: 0.010931861}
