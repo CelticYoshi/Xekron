@@ -65,5 +65,19 @@ void OnTriggerEnter(Collider other)
             //Destroy(this.gameObject);
 
         }}
+
+         public void EnemyAttack()
+    {
+        _isAttacking = true;
+        _enemyAnimation.SetBool("IsMoving", false);
+        _enemyAnimation.SetTrigger("IsAttacking");
+        StartCoroutine("EnemyAttackCoolDown");
+    }
+
+    IEnumerator EnemyAttackCoolDown()
+    {
+        yield return new WaitForSeconds(3f);
+        _isAttacking = false;
+    }
 }
 

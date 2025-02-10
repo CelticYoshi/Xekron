@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     public LayerMask whatIsGround;
     public AudioClip shootSound;
     public AudioClip jumpSound;
+    public AudioClip playerHitSound;
     public AudioClip winSound;
     private bool _canPlayerJump;
     private Vector3 _moveInput;
@@ -120,6 +121,15 @@ public class PlayerController : MonoBehaviour
              SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);     
         }
     
+        }
+
+        void OnCollisionEnter(Collision other)
+        {
+            if(other.gameObject.CompareTag("Enemy"))
+        {
+             playerAudio.PlayOneShot(playerHitSound, 1.0f);
+             
+        }
         }
 }
 
