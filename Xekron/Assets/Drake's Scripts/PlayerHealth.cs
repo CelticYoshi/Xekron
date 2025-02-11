@@ -6,6 +6,7 @@ using TMPro;
 public class PlayerHealth : MonoBehaviour
 {
     public int _health = 3;
+    public bool _canTakeDamage = true;
     public TextMeshProUGUI playerHealthText;
 
     void Start()
@@ -13,10 +14,13 @@ public class PlayerHealth : MonoBehaviour
         DisplayPlayerHealth();
     }
 
-    public void TakeDamage(int damageAmount)
+    public IEnumerator TakeDamage(int damageAmount)
     {
         _health -= damageAmount;
         DisplayPlayerHealth();
+
+        yield return new WaitForSeconds(1f);
+        _canTakeDamage = true;
     }
 
     public void DisplayPlayerHealth()
@@ -27,4 +31,18 @@ public class PlayerHealth : MonoBehaviour
     public int GetPlayerHealth()
     {
         return _health;
-    }}
+    
+    }
+    
+    void OnControllerColliderHit(ControllerColliderHit hit)
+     {
+        if(hit.collider.gameObject.CompareTag("Enemy") && _canTakeDamage)
+        {
+            _canTakeDamage = false;
+            EnemyAttack enemyAttack = hit.gameObject.GetComponent<EnemyAttack>();
+            StartCoroutine(routine:TakeDamage(enemyAttack.Enemydamage()));
+            
+        }
+     }
+    
+    }
