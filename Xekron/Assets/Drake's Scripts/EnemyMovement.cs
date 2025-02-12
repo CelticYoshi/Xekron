@@ -5,14 +5,17 @@ using UnityEngine.AI;
 
 public class EnemyMovement : MonoBehaviour
 {
+    public Transform _player;
     public AudioClip EnemyHurt;
     public float speed = 1f;
-    public float rangeValue = 5f;
+    //public float rangeValue = 5f;
+    public float minDistance = 1.5f;
+    public float maxDistance = 10f;
     public float rotationSpeed;
     private Vector3 _startingPosition;
     private AudioSource _enemySound;
     [SerializeField] private bool _isAttacking;
-    [SerializeField] private Transform _player;
+    //[SerializeField] private Transform _player;
     [SerializeField] private Animator _enemyAnimation;
     //[SerializeField] private Rigidbody _enemyRb;
     private NavMeshAgent navMeshAgent;
@@ -32,17 +35,19 @@ public class EnemyMovement : MonoBehaviour
         
         float distance = Vector3.Distance(_player.position, transform.position);
         //Debug.Log("Distance" + distance);
-        if(distance < rangeValue)
+        if(distance < maxDistance)
             {
                 //_enemyRb.velocity = movementDirection * speed;
-                transform.LookAt(_player);
+                //transform.LookAt(_player);
                 navMeshAgent.SetDestination(_player.position);
                  _enemyAnimation.SetBool("IsInRange", true);
             }
-            else
+            else if (distance > minDistance)
             {
                  _enemyAnimation.SetBool("IsInRange", false);
+                 _enemyAnimation.SetBool("IsMoving", false);
             }
+
          if (movementDirection != Vector3.zero)
         {
             _enemyAnimation.SetBool("IsMoving", true);
