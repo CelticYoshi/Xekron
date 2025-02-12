@@ -10,12 +10,7 @@ public class EnemyAttack : MonoBehaviour
 
 
 
-     void OnControllerColliderHit(ControllerColliderHit hit)
-     {
-        Debug.Log("I hit the player");
-            _enemymovement.EnemyAttack();
-            _player.TakeDamage(_enemyDamageAmount);
-     }
+    
 
      public int Enemydamage()
      {

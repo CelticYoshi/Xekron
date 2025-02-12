@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -42,6 +43,14 @@ public class PlayerHealth : MonoBehaviour
             EnemyAttack enemyAttack = hit.gameObject.GetComponent<EnemyAttack>();
             StartCoroutine(routine:TakeDamage(enemyAttack.Enemydamage()));
             
+        }
+     }
+
+     public void Update()
+     {
+        if(_health <= 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
      }
     
