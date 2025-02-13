@@ -11,8 +11,8 @@ public class EnemyMovement : MonoBehaviour
     //public float rangeValue = 5f;
     public float minDistance = 1.5f;
     public float maxDistance = 10f;
-    public float rotationSpeed;
-    private Vector3 _startingPosition;
+    //public float rotationSpeed;
+    //private Vector3 _startingPosition;
     private AudioSource _enemySound;
     [SerializeField] private bool _isAttacking;
     //[SerializeField] private Transform _player;
@@ -23,7 +23,7 @@ public class EnemyMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _startingPosition = transform.position;
+        //_startingPosition = transform.position;
         navMeshAgent = GetComponent<NavMeshAgent>();
         _enemySound = GetComponent<AudioSource>();
     }
@@ -40,9 +40,10 @@ public class EnemyMovement : MonoBehaviour
                 //_enemyRb.velocity = movementDirection * speed;
                 //transform.LookAt(_player);
                 navMeshAgent.SetDestination(_player.position);
-                 _enemyAnimation.SetBool("IsInRange", true);
+                _enemyAnimation.SetBool("IsMoving", true);
+                _enemyAnimation.SetBool("IsInRange", true);
             }
-            else if (distance > minDistance)
+            else //if (distance > minDistance)
             {
                  _enemyAnimation.SetBool("IsInRange", false);
                  _enemyAnimation.SetBool("IsMoving", false);
@@ -50,11 +51,11 @@ public class EnemyMovement : MonoBehaviour
 
          if (movementDirection != Vector3.zero)
         {
-            _enemyAnimation.SetBool("IsMoving", true);
+            //_enemyAnimation.SetBool("IsMoving", true);
 
             Quaternion toRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
 
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+            //transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
         }
         else
         {

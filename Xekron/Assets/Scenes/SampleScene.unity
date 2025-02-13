@@ -132,12 +132,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4257895611433980653, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4257895611433980653, guid: 92b107729b83542b19c440f53ec39316, type: 3}
       propertyPath: _player
       value: 
       objectReference: {fileID: 300261035}
     - target: {fileID: 4257895611433980653, guid: 92b107729b83542b19c440f53ec39316, type: 3}
       propertyPath: minDistance
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7857082100942668217, guid: 92b107729b83542b19c440f53ec39316, type: 3}
       propertyPath: m_LocalPosition.x
@@ -709,10 +713,10 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 152252747320106498, guid: f0cdf62f5e0234d698cfdbb229399f8b, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1853717457}
+      addedObject: {fileID: 1853717456}
     - targetCorrespondingSourceObject: {fileID: 152252747320106498, guid: f0cdf62f5e0234d698cfdbb229399f8b, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1853717456}
+      addedObject: {fileID: 1853717465}
   m_SourcePrefab: {fileID: 100100000, guid: f0cdf62f5e0234d698cfdbb229399f8b, type: 3}
 --- !u!1 &1182136435
 GameObject:
@@ -743,7 +747,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6ed8e61a14c3413384c9e467b1bdd6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyCount: 0
+  _enemyCount: 0
+  _collectableCount: 0
+  enemyText: {fileID: 0}
+  collectableText: {fileID: 0}
 --- !u!4 &1182136437
 Transform:
   m_ObjectHideFlags: 0
@@ -861,6 +868,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 300261035}
+    - target: {fileID: 2182878749907944877, guid: 16df0e2563e8447c0bc272198a781896, type: 3}
+      propertyPath: minDistance
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5837467648001592211, guid: 16df0e2563e8447c0bc272198a781896, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11
@@ -1030,7 +1041,7 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1853717452}
   m_Enabled: 1
---- !u!82 &1853717457
+--- !u!82 &1853717465
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1040,7 +1051,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 55c081fdb42124b04baae062e2e3c469, type: 3}
+  m_audioClip: {fileID: 8300000, guid: f30f17b7b7a044d3c82e6630d5882735, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -2318,7 +2329,6 @@ MonoBehaviour:
   speed: 0
   minDistance: 5
   maxDistance: 0
-  rotationSpeed: 0
   _isAttacking: 0
   _enemyAnimation: {fileID: 392993142316691908}
 --- !u!4 &4538379211836177734
