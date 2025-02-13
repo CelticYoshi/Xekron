@@ -8,11 +8,14 @@ public class PlayerHealth : MonoBehaviour
 {
     public int _health = 3;
     public bool _canTakeDamage = true;
+    public AudioClip playerHitSound;
     public TextMeshProUGUI playerHealthText;
+    private AudioSource playerAudio;
 
     void Start()
     {
         DisplayPlayerHealth();
+        playerAudio = GetComponent<AudioSource>();
     }
 
     public IEnumerator TakeDamage(int damageAmount)
@@ -42,7 +45,7 @@ public class PlayerHealth : MonoBehaviour
             _canTakeDamage = false;
             EnemyAttack enemyAttack = hit.gameObject.GetComponent<EnemyAttack>();
             StartCoroutine(routine:TakeDamage(enemyAttack.Enemydamage()));
-            
+            playerAudio.PlayOneShot(playerHitSound, 1.0f);
         }
      }
 

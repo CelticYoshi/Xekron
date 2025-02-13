@@ -26,7 +26,7 @@ public class Timer : MonoBehaviour
     {
         if(_isTimerRunning)
         {
-            if(timeRemaining > 0)
+            if(timeRemaining >= 0)
             {
                 timeRemaining -= Time.deltaTime;
                 // display the timer amount
@@ -36,16 +36,14 @@ public class Timer : MonoBehaviour
             {
                 timeRemaining = 0;
                 _isTimerRunning = false;
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                new WaitForSeconds(1.0f);
+                playerAudio.PlayOneShot(loseSound, 1.0f);
             }
         }
 
-        if(timeRemaining <=0)
-        {
-            playerAudio.PlayOneShot(loseSound, 1.0f);
-            //WaitForSeconds(1f);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
     }     
+
 
     public void StartGameTimer()
     {
