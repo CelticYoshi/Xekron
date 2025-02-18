@@ -118,6 +118,7 @@ public class PlayerController : MonoBehaviour
          if(other.gameObject.CompareTag("Portal"))
         {
              playerAudio.PlayOneShot(winSound, 1.0f);
+             //WaitForSeconds(1.0f);
              SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);     
         }
     
