@@ -19,6 +19,8 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private Animator _enemyAnimation;
     //[SerializeField] private Rigidbody _enemyRb;
     private NavMeshAgent navMeshAgent;
+    public ParticleSystem bloodParticle;
+
 
     // Start is called before the first frame update
     void Start()
@@ -68,6 +70,7 @@ void OnTriggerEnter(Collider other)
         {
             Debug.Log("I hit the enemy");
             _enemySound.PlayOneShot(EnemyHurt, 1.0f);
+            bloodParticle.Play();
             //Destroy(this.gameObject);
 
         }}
