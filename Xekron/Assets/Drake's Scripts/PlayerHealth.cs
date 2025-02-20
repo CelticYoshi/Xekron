@@ -11,6 +11,7 @@ public class PlayerHealth : MonoBehaviour
     public AudioClip playerHitSound;
     public TextMeshProUGUI playerHealthText;
     private AudioSource playerAudio;
+    public ParticleSystem bloodParticle;
 
     void Start()
     {
@@ -46,6 +47,7 @@ public class PlayerHealth : MonoBehaviour
             EnemyAttack enemyAttack = hit.gameObject.GetComponent<EnemyAttack>();
             StartCoroutine(routine:TakeDamage(enemyAttack.Enemydamage()));
             playerAudio.PlayOneShot(playerHitSound, 1.0f);
+            bloodParticle.Play();
         }
      }
 

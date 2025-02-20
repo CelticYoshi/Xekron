@@ -1987,7 +1987,7 @@ Transform:
   - {fileID: 8924700134643607160}
   - {fileID: 5476246509991906868}
   - {fileID: 5400753867492943060}
-  - {fileID: 8417719191513602906}
+  - {fileID: 432521505928468360}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &3627470309944724834
@@ -2030,7 +2030,7 @@ MonoBehaviour:
   maxDistance: 10
   _isAttacking: 1
   _enemyAnimation: {fileID: 3627470309944724834}
-  bloodParticle: {fileID: 8529985869865937208}
+  bloodParticle: {fileID: 8160686740796335032, guid: 1ed317178d9ce4964b6be4c81d793017, type: 3}
 --- !u!136 &37706737365269524
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2710,7 +2710,7 @@ Transform:
   - {fileID: 2436691486022769921}
   m_Father: {fileID: 6668190114828394865}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &513425402590530176
+--- !u!1001 &8498594498005124690
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -2760,20 +2760,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8356543217419024374, guid: 1ed317178d9ce4964b6be4c81d793017, type: 3}
       propertyPath: m_Name
-      value: FX_BloodSplatter_01
+      value: FX_BloodSplatter_01 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ed317178d9ce4964b6be4c81d793017, type: 3}
---- !u!4 &8417719191513602906 stripped
+--- !u!4 &432521505928468360 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8354655250606068186, guid: 1ed317178d9ce4964b6be4c81d793017, type: 3}
-  m_PrefabInstance: {fileID: 513425402590530176}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &8529985869865937208 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 8160686740796335032, guid: 1ed317178d9ce4964b6be4c81d793017, type: 3}
-  m_PrefabInstance: {fileID: 513425402590530176}
+  m_PrefabInstance: {fileID: 8498594498005124690}
   m_PrefabAsset: {fileID: 0}

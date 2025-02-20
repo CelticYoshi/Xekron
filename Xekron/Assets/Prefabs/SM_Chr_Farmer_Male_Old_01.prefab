@@ -1342,7 +1342,7 @@ Transform:
   - {fileID: 2074499213543749989}
   - {fileID: 4396513055638188465}
   - {fileID: 7580327843872730856}
-  - {fileID: 3917168705765574206}
+  - {fileID: 5690579922011094237}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &8430396424489753553
@@ -1408,7 +1408,7 @@ MonoBehaviour:
   maxDistance: 5
   _isAttacking: 1
   _enemyAnimation: {fileID: 8430396424489753553}
-  bloodParticle: {fileID: 0}
+  bloodParticle: {fileID: 8160686740796335032, guid: 1ed317178d9ce4964b6be4c81d793017, type: 3}
 --- !u!82 &8684224887611842489
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2710,7 +2710,7 @@ Transform:
   - {fileID: 5532556926089069258}
   m_Father: {fileID: 2291684538368630894}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &5020711493223913444
+--- !u!1001 &4397961734896938247
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -2767,8 +2767,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ed317178d9ce4964b6be4c81d793017, type: 3}
---- !u!4 &3917168705765574206 stripped
+--- !u!4 &5690579922011094237 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8354655250606068186, guid: 1ed317178d9ce4964b6be4c81d793017, type: 3}
-  m_PrefabInstance: {fileID: 5020711493223913444}
+  m_PrefabInstance: {fileID: 4397961734896938247}
   m_PrefabAsset: {fileID: 0}
