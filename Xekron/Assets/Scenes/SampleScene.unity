@@ -131,17 +131,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 37706737365269524, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 37706737365269524, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4257895611433980653, guid: 92b107729b83542b19c440f53ec39316, type: 3}
       propertyPath: speed
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 4257895611433980653, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 300261035}
     - target: {fileID: 4257895611433980653, guid: 92b107729b83542b19c440f53ec39316, type: 3}
       propertyPath: _player
       value: 
       objectReference: {fileID: 300261035}
     - target: {fileID: 4257895611433980653, guid: 92b107729b83542b19c440f53ec39316, type: 3}
       propertyPath: minDistance
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7857082100942668217, guid: 92b107729b83542b19c440f53ec39316, type: 3}
       propertyPath: m_LocalPosition.x
@@ -183,6 +195,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8189564837308811652, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 1853717473}
     - target: {fileID: 8206070546360748685, guid: 92b107729b83542b19c440f53ec39316, type: 3}
       propertyPath: m_Name
       value: SM_Chr_Farmer_Male_01
@@ -206,6 +222,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3126091384957087422, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4311739321824559576, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -247,9 +267,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7584973570540654775, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 300261035}
+    - target: {fileID: 7584973570540654775, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
       propertyPath: _player
       value: 
       objectReference: {fileID: 300261035}
+    - target: {fileID: 8861776599536538001, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 1853717473}
     - target: {fileID: 9015020564793688450, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
       propertyPath: m_Name
       value: SM_Chr_Scarecrow_01
@@ -531,6 +559,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!198 &961381500 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5496687046567988927, guid: 16df0e2563e8447c0bc272198a781896, type: 3}
+  m_PrefabInstance: {fileID: 1487841295}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -719,6 +752,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 152252747320106498, guid: f0cdf62f5e0234d698cfdbb229399f8b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1853717465}
+    - targetCorrespondingSourceObject: {fileID: 152252747320106498, guid: f0cdf62f5e0234d698cfdbb229399f8b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1853717473}
   m_SourcePrefab: {fileID: 100100000, guid: f0cdf62f5e0234d698cfdbb229399f8b, type: 3}
 --- !u!1 &1182136435
 GameObject:
@@ -768,6 +804,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1192337876 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7847624661735997090, guid: 9ebd45a63c64344498a1f165a7930abd, type: 3}
+  m_PrefabInstance: {fileID: 6179440906281066195}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1194202876
 GameObject:
   m_ObjectHideFlags: 0
@@ -866,6 +913,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 208713044715968628, guid: 16df0e2563e8447c0bc272198a781896, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2182878749907944877, guid: 16df0e2563e8447c0bc272198a781896, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 300261035}
     - target: {fileID: 2182878749907944877, guid: 16df0e2563e8447c0bc272198a781896, type: 3}
       propertyPath: _player
       value: 
@@ -918,6 +973,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Chr_Farmer_Male_Old_01
       objectReference: {fileID: 0}
+    - target: {fileID: 8721805088452347476, guid: 16df0e2563e8447c0bc272198a781896, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 1853717473}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1139,6 +1198,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1853717473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853717452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d3b600a61f4e4d3f86736ea864b2911, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: 3
+  _canTakeDamage: 1
+  playerHitSound: {fileID: 0}
+  playerHealthText: {fileID: 1192337876}
+  bloodParticle: {fileID: 961381500}
 --- !u!1 &2046502079
 GameObject:
   m_ObjectHideFlags: 0
@@ -2326,13 +2402,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb325d305ae4348a18b0bf802b1b3f27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _player: {fileID: 300261035}
+  player: {fileID: 0}
   EnemyHurt: {fileID: 0}
   speed: 0
   minDistance: 5
   maxDistance: 0
   _isAttacking: 0
   _enemyAnimation: {fileID: 392993142316691908}
+  bloodParticle: {fileID: 0}
 --- !u!4 &4538379211836177734
 Transform:
   m_ObjectHideFlags: 0
