@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Animator _playerAnimation;
     [SerializeField] private Transform _player;
     private AudioSource playerAudio;
+    public int stallAmount;
 
     // Start is called before the first frame update
     void Start()
@@ -118,8 +119,8 @@ public class PlayerController : MonoBehaviour
          if(other.gameObject.CompareTag("Portal"))
         {
              playerAudio.PlayOneShot(winSound, 1.0f);
-             //WaitForSeconds(1.0f);
-             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);     
+            StartCoroutine(PortalTransition());
+                  
         }
     
         }
@@ -132,5 +133,12 @@ public class PlayerController : MonoBehaviour
              
         }
         }
+    
+    private IEnumerator PortalTransition()
+    {
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+        
 }
 

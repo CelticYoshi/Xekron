@@ -32,17 +32,21 @@ public class Timer : MonoBehaviour
                 // display the timer amount
                 DisplayTime(timeRemaining);
             }
-            else 
-            {
-                timeRemaining = 0;
-                _isTimerRunning = false;
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-                new WaitForSeconds(1.0f);
-                playerAudio.PlayOneShot(loseSound, 1.0f);
-            }
+            //if(timeRemaining <= 0)
+            //{
+                //_isTimerRunning = false;
+                //playerAudio.PlayOneShot(loseSound, 1.0f);
+                //StartCoroutine(TimeRunsOut());
+            //}
         }
 
     }     
+
+    private IEnumerator TimeRunsOut()
+    {
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 
 
     public void StartGameTimer()
