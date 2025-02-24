@@ -32,12 +32,13 @@ public class Timer : MonoBehaviour
                 // display the timer amount
                 DisplayTime(timeRemaining);
             }
-            //if(timeRemaining <= 0)
-            //{
-                //_isTimerRunning = false;
-                //playerAudio.PlayOneShot(loseSound, 1.0f);
-                //StartCoroutine(TimeRunsOut());
-            //}
+            if(timeRemaining <= 0 )
+            {
+                _isTimerRunning = false;
+                playerAudio.PlayOneShot(loseSound, 1.0f);
+                StartCoroutine(TimeRunsOut());
+            }
+
         }
 
     }     

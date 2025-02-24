@@ -36,7 +36,7 @@ public class EnemyMovement : MonoBehaviour
         float distance = Vector3.Distance(player.position, transform.position);
         if (player != null)
         {
-            if(distance < maxDistance)
+            if(distance < maxDistance && distance > minDistance)
             {
                 //_enemyRb.velocity = movementDirection * speed;
                 //transform.LookAt(_player);
@@ -47,6 +47,11 @@ public class EnemyMovement : MonoBehaviour
             else if (distance < minDistance)
             {
                  _enemyAnimation.SetBool("IsInRange", false);
+                 _enemyAnimation.SetBool("IsMoving", false);
+            }
+            else if (distance > maxDistance)
+            {
+                _enemyAnimation.SetBool("IsInRange", false);
                  _enemyAnimation.SetBool("IsMoving", false);
             }
             //navMeshAgent.SetDestination(player.position);
