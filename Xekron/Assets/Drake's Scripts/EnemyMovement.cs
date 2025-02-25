@@ -6,6 +6,7 @@ using UnityEngine.AI;
 public class EnemyMovement : MonoBehaviour
 {
     public Transform player;
+    public float rotationSpeed = 1;
     public AudioClip EnemyHurt;
     public float speed = 1f;
     //public float rangeValue = 5f;
@@ -36,7 +37,7 @@ public class EnemyMovement : MonoBehaviour
         float distance = Vector3.Distance(player.position, transform.position);
         if (player != null)
         {
-            if(distance < maxDistance && distance > minDistance)
+            if(distance <= maxDistance && distance >= minDistance)
             {
                 //_enemyRb.velocity = movementDirection * speed;
                 //transform.LookAt(_player);
@@ -44,48 +45,9 @@ public class EnemyMovement : MonoBehaviour
                 _enemyAnimation.SetBool("IsMoving", true);
                 _enemyAnimation.SetBool("IsInRange", true);
             }
-            else if (distance < minDistance)
-            {
-                 _enemyAnimation.SetBool("IsInRange", false);
-                 _enemyAnimation.SetBool("IsMoving", false);
-            }
-            else if (distance > maxDistance)
-            {
-                _enemyAnimation.SetBool("IsInRange", false);
-                 _enemyAnimation.SetBool("IsMoving", false);
-            }
-            //navMeshAgent.SetDestination(player.position);
-        }
-        //Vector3 movementDirection = (player.position - transform.position).normalized;
-        
-        //float distance = Vector3.Distance(player.position, transform.position);
-        //Debug.Log("Distance" + distance);
-        //if(distance < maxDistance)
-            //{
-                //_enemyRb.velocity = movementDirection * speed;
-                //transform.LookAt(_player);
-                //navMeshAgent.SetDestination(player.position);
-                //_enemyAnimation.SetBool("IsMoving", true);
-                //_enemyAnimation.SetBool("IsInRange", true);
-            //}
-            //else if (distance < minDistance)
-            //{
-                 //_enemyAnimation.SetBool("IsInRange", false);
-                 //_enemyAnimation.SetBool("IsMoving", false);
-            //}
-
-         //if (movementDirection != Vector3.zero)
-        //{
-            //_enemyAnimation.SetBool("IsMoving", true);
-
-            //Quaternion toRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
-
-            //transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
-        //}
-        //else
-        //{
-            //_enemyAnimation.SetBool("IsMoving", false);
-        //}
+        }    
+            
+            
 }
 void OnTriggerEnter(Collider other)
     {

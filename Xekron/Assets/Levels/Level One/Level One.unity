@@ -32062,8 +32062,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6ed8e61a14c3413384c9e467b1bdd6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemyCount: 3
-  _collectableCount: 10
+  _enemyAmount: 0
+  _collectableAmount: 0
   enemyText: {fileID: 75658714}
   collectableText: {fileID: 1087287851}
 --- !u!4 &1007452522
@@ -60806,6 +60806,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2183771343939831191, guid: 9ebd45a63c64344498a1f165a7930abd, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3894198482106143657, guid: 9ebd45a63c64344498a1f165a7930abd, type: 3}
       propertyPath: m_text
       value: 'Time:'
@@ -68974,6 +68978,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 5043689389937103205}
+    - target: {fileID: 4257895611433980653, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+      propertyPath: maxDistance
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4257895611433980653, guid: 92b107729b83542b19c440f53ec39316, type: 3}
       propertyPath: bloodParticle
       value: 
