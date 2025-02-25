@@ -734,6 +734,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5839906390694054205, guid: f0cdf62f5e0234d698cfdbb229399f8b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8919833021631210301, guid: f0cdf62f5e0234d698cfdbb229399f8b, type: 3}
       propertyPath: _player
       value: 
@@ -1006,9 +1010,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8206070546360748685, guid: 92b107729b83542b19c440f53ec39316, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2113852417}
-    - targetCorrespondingSourceObject: {fileID: 8206070546360748685, guid: 92b107729b83542b19c440f53ec39316, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2113852424}
   m_SourcePrefab: {fileID: 100100000, guid: 92b107729b83542b19c440f53ec39316, type: 3}
 --- !u!1001 &1487841295
 PrefabInstance:
@@ -1206,7 +1207,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1853717452}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!82 &1853717465
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1474,8 +1475,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d9ae98918846428b98a0fe5a1787bb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EnemyHurt: {fileID: 8300000, guid: 6a82b5e29ae3e49b9b1df7d78390a67a, type: 3}
+  bloodParticle: {fileID: 198157190901592544, guid: a1ff4ad1c15edf34290f004078ae88bd, type: 3}
   speed: 10
-  minDistance: 3
+  minDistance: 2
   maxDistance: 5
   player: {fileID: 300261035}
   _enemyAnimation: {fileID: 2113852422}
@@ -1484,33 +1487,6 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 3627470309944724834, guid: 92b107729b83542b19c440f53ec39316, type: 3}
   m_PrefabInstance: {fileID: 1387006767}
   m_PrefabAsset: {fileID: 0}
---- !u!54 &2113852424
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2113852416}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 0
 --- !u!1 &12644011720383332
 GameObject:
   m_ObjectHideFlags: 0
@@ -3860,7 +3836,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &8365371504496866414
 GameObject:
   m_ObjectHideFlags: 0
