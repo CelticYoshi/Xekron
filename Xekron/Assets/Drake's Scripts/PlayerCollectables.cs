@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -17,6 +18,7 @@ public class PlayerCollectables : MonoBehaviour
     void Start()
     {
         playerAudio = GetComponent<AudioSource>();
+         GameObject.Find("Game Manager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -30,9 +32,9 @@ public class PlayerCollectables : MonoBehaviour
         if(other.gameObject.CompareTag("Collectable"))
         {
              confettiParticle.Play();
-             other.gameObject.SetActive(false);
              playerAudio.PlayOneShot(collectSound, 1.0f);   
-             
+             GameObject.Find("GameManager").GetComponent<GameManager>().UpdateCollectableAmount();
+             other.gameObject.SetActive(false);
              
     }
 }

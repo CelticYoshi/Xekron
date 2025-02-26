@@ -23,9 +23,11 @@ public class GameManager : MonoBehaviour
         collectableText.text = "Collectables Remaining: " + _collectableAmount.ToString();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void UpdateCollectableAmount()
     {
-        
+        _collectableAmount -= 1;
+        collectableText.text = "Collectables Remaining: " + _collectableAmount.ToString();
     }
+    // Update is called once per frame
+    
 }
