@@ -23,6 +23,7 @@ public class AltEnemyMovement : MonoBehaviour
         //_zombieRb = GetComponent<Rigidbody>();
         _player = GameObject.Find("Player");
         navMeshAgent = GetComponent<NavMeshAgent>();
+        _enemySound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame

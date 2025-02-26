@@ -797,8 +797,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6ed8e61a14c3413384c9e467b1bdd6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemyCount: 0
-  _collectableCount: 0
+  _enemyAmount: 0
+  _collectableAmount: 0
   enemyText: {fileID: 0}
   collectableText: {fileID: 0}
 --- !u!4 &1182136437
@@ -1000,6 +1000,22 @@ PrefabInstance:
     - target: {fileID: 8206070546360748685, guid: 92b107729b83542b19c440f53ec39316, type: 3}
       propertyPath: m_Name
       value: SM_Chr_Farmer_Male_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985395056866974006, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+      propertyPath: m_Radius
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985395056866974006, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+      propertyPath: m_AutoRepath
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985395056866974006, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+      propertyPath: m_AutoBraking
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985395056866974006, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+      propertyPath: m_StoppingDistance
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4636337302805736710, guid: 92b107729b83542b19c440f53ec39316, type: 3}
@@ -1478,8 +1494,8 @@ MonoBehaviour:
   EnemyHurt: {fileID: 8300000, guid: 6a82b5e29ae3e49b9b1df7d78390a67a, type: 3}
   bloodParticle: {fileID: 198157190901592544, guid: a1ff4ad1c15edf34290f004078ae88bd, type: 3}
   speed: 10
-  minDistance: 2
-  maxDistance: 5
+  minDistance: 1.5
+  maxDistance: 10
   player: {fileID: 300261035}
   _enemyAnimation: {fileID: 2113852422}
 --- !u!95 &2113852422 stripped
@@ -2538,6 +2554,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  rotationSpeed: 1
   EnemyHurt: {fileID: 0}
   speed: 0
   minDistance: 5
