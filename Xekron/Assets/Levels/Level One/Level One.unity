@@ -2601,6 +2601,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4092590276350420, guid: 697aefc0d0375494ea083877ca3d94d2, type: 3}
   m_PrefabInstance: {fileID: 101770838}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &102327910 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8206070546360748685, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+  m_PrefabInstance: {fileID: 209832730}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &102327920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102327910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0e4f372f23f949c8b3da1f1e8b59fc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: 3
+  _canTakeDamage: 1
+  damageAmount: 1
+  bloodParticle: {fileID: 198130628}
 --- !u!1001 &103911691
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5653,6 +5674,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4109834554446322, guid: 387d93711c1d03a48b083591256c560c, type: 3}
   m_PrefabInstance: {fileID: 201366846}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &202265887 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9015020564793688450, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
+  m_PrefabInstance: {fileID: 1663881642}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &209296157
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5719,6 +5745,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1023614368310957752, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 5043689389937103205}
+    - target: {fileID: 1023614368310957752, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+      propertyPath: minDistance
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3627470309944724834, guid: 92b107729b83542b19c440f53ec39316, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 0
@@ -5786,7 +5820,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8206070546360748685, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 102327920}
   m_SourcePrefab: {fileID: 100100000, guid: 92b107729b83542b19c440f53ec39316, type: 3}
 --- !u!1001 &213379631
 PrefabInstance:
@@ -8210,6 +8247,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4834476638083880, guid: 97e77ce5d8e6fcf45968ff6855ddddf2, type: 3}
   m_PrefabInstance: {fileID: 278576684}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &279169227 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9015020564793688450, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
+  m_PrefabInstance: {fileID: 821829261}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &280137071
 PrefabInstance:
@@ -22134,6 +22176,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4311739321824559576, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
   m_PrefabInstance: {fileID: 821829261}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &708017774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279169227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0e4f372f23f949c8b3da1f1e8b59fc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: 3
+  _canTakeDamage: 1
+  damageAmount: 1
+  bloodParticle: {fileID: 198130628}
 --- !u!1001 &709066692
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22767,6 +22825,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4193215156309446, guid: 47d0da1ba5336ef4bb50355db2307fe0, type: 3}
   m_PrefabInstance: {fileID: 717955147}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &723105127 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8206070546360748685, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+  m_PrefabInstance: {fileID: 1633338143099928453}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &724549464
 PrefabInstance:
@@ -24418,6 +24481,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1023614368310957752, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 5043689389937103205}
+    - target: {fileID: 1023614368310957752, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+      propertyPath: minDistance
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3627470309944724834, guid: 92b107729b83542b19c440f53ec39316, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 0
@@ -24485,7 +24556,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8206070546360748685, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1234188857}
   m_SourcePrefab: {fileID: 100100000, guid: 92b107729b83542b19c440f53ec39316, type: 3}
 --- !u!1001 &774928421
 PrefabInstance:
@@ -24563,6 +24637,27 @@ ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 5496687046567988927, guid: 16df0e2563e8447c0bc272198a781896, type: 3}
   m_PrefabInstance: {fileID: 1117413669931352495}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &776902977 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9015020564793688450, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
+  m_PrefabInstance: {fileID: 833580299}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &776902986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776902977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0e4f372f23f949c8b3da1f1e8b59fc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: 3
+  _canTakeDamage: 1
+  damageAmount: 1
+  bloodParticle: {fileID: 198130628}
 --- !u!1001 &783304432
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25422,6 +25517,14 @@ PrefabInstance:
       propertyPath: bloodParticle
       value: 
       objectReference: {fileID: 1746547296}
+    - target: {fileID: 8148480042399636740, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 5043689389937103205}
+    - target: {fileID: 8148480042399636740, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
+      propertyPath: minDistance
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8861776599536538001, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
       propertyPath: _player
       value: 
@@ -25437,7 +25540,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4311739321824559576, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1746547298}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9015020564793688450, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 708017774}
   m_SourcePrefab: {fileID: 100100000, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
 --- !u!1001 &822777586
 PrefabInstance:
@@ -26063,6 +26169,14 @@ PrefabInstance:
       propertyPath: bloodParticle
       value: 
       objectReference: {fileID: 1181918185}
+    - target: {fileID: 8148480042399636740, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 5043689389937103205}
+    - target: {fileID: 8148480042399636740, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
+      propertyPath: minDistance
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8861776599536538001, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
       propertyPath: _player
       value: 
@@ -26078,7 +26192,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4311739321824559576, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1181918187}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9015020564793688450, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 776902986}
   m_SourcePrefab: {fileID: 100100000, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
 --- !u!1001 &836146363
 PrefabInstance:
@@ -28823,6 +28940,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4466753665643056, guid: 1ea71f643417d124d91e53eae7c666a6, type: 3}
   m_PrefabInstance: {fileID: 908913397}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &910235126 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8206070546360748685, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+  m_PrefabInstance: {fileID: 1051997299}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &910235136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 910235126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0e4f372f23f949c8b3da1f1e8b59fc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: 3
+  _canTakeDamage: 1
+  damageAmount: 1
+  bloodParticle: {fileID: 198130628}
 --- !u!1001 &910261967
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33228,6 +33366,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1023614368310957752, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 5043689389937103205}
+    - target: {fileID: 1023614368310957752, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+      propertyPath: minDistance
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3627470309944724834, guid: 92b107729b83542b19c440f53ec39316, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 0
@@ -33295,7 +33441,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8206070546360748685, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 910235136}
   m_SourcePrefab: {fileID: 100100000, guid: 92b107729b83542b19c440f53ec39316, type: 3}
 --- !u!1001 &1052156685
 PrefabInstance:
@@ -33820,6 +33969,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7857082100942668217, guid: 92b107729b83542b19c440f53ec39316, type: 3}
   m_PrefabInstance: {fileID: 1633338143099928453}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1067177300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723105127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0e4f372f23f949c8b3da1f1e8b59fc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: 3
+  _canTakeDamage: 1
+  damageAmount: 1
+  bloodParticle: {fileID: 198130628}
 --- !u!1001 &1070730286
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40558,6 +40723,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4323406122081712, guid: 2df6c259e4a67614fac8c85e23ecb3d5, type: 3}
   m_PrefabInstance: {fileID: 1230025202}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1234188847 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8206070546360748685, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+  m_PrefabInstance: {fileID: 774357217}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1234188857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1234188847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0e4f372f23f949c8b3da1f1e8b59fc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: 3
+  _canTakeDamage: 1
+  damageAmount: 1
+  bloodParticle: {fileID: 198130628}
 --- !u!1001 &1236552582
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43901,6 +44087,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4856223807278604, guid: c0fe8f954046e4b4d845f9f33c99548e, type: 3}
   m_PrefabInstance: {fileID: 1325648805}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1326648971 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6407736678903725442, guid: 16df0e2563e8447c0bc272198a781896, type: 3}
+  m_PrefabInstance: {fileID: 1117413669931352495}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1326648981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326648971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0e4f372f23f949c8b3da1f1e8b59fc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: 3
+  _canTakeDamage: 1
+  damageAmount: 1
+  bloodParticle: {fileID: 198130628}
 --- !u!1001 &1329503634
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46948,6 +47155,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4659579814028464, guid: 9020d2933ec6c0544965ea4b12952c42, type: 3}
   m_PrefabInstance: {fileID: 1439159415}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1439489854 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9015020564793688450, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
+  m_PrefabInstance: {fileID: 8781079301899392406}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1441073297
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47409,6 +47621,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4311739321824559576, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
   m_PrefabInstance: {fileID: 8781079301899392406}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1466549470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439489854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0e4f372f23f949c8b3da1f1e8b59fc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: 3
+  _canTakeDamage: 1
+  damageAmount: 1
+  bloodParticle: {fileID: 198130628}
 --- !u!1001 &1466592982
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52890,6 +53118,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1023614368310957752, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 5043689389937103205}
+    - target: {fileID: 1023614368310957752, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+      propertyPath: minDistance
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3627470309944724834, guid: 92b107729b83542b19c440f53ec39316, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 0
@@ -52957,7 +53193,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8206070546360748685, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2017999605}
   m_SourcePrefab: {fileID: 100100000, guid: 92b107729b83542b19c440f53ec39316, type: 3}
 --- !u!1001 &1646157745
 PrefabInstance:
@@ -53439,6 +53678,14 @@ PrefabInstance:
       propertyPath: bloodParticle
       value: 
       objectReference: {fileID: 2062396299}
+    - target: {fileID: 8148480042399636740, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 5043689389937103205}
+    - target: {fileID: 8148480042399636740, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
+      propertyPath: minDistance
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8861776599536538001, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
       propertyPath: _player
       value: 
@@ -53454,7 +53701,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4311739321824559576, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2062396301}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9015020564793688450, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1724189252}
   m_SourcePrefab: {fileID: 100100000, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
 --- !u!1001 &1665104366
 PrefabInstance:
@@ -55232,6 +55482,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4311739321824559576, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
   m_PrefabInstance: {fileID: 1663881642}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1724189252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 202265887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0e4f372f23f949c8b3da1f1e8b59fc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: 3
+  _canTakeDamage: 1
+  damageAmount: 1
+  bloodParticle: {fileID: 198130628}
 --- !u!1001 &1724323644
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64958,6 +65224,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4562538906941140, guid: d0e76f6d08ce67d48994804f237e67eb, type: 3}
   m_PrefabInstance: {fileID: 2016308549}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2017999595 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8206070546360748685, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+  m_PrefabInstance: {fileID: 1643581390}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2017999605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2017999595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0e4f372f23f949c8b3da1f1e8b59fc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: 3
+  _canTakeDamage: 1
+  damageAmount: 1
+  bloodParticle: {fileID: 198130628}
 --- !u!1001 &2020285163
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68937,6 +69224,14 @@ PrefabInstance:
       propertyPath: bloodParticle
       value: 
       objectReference: {fileID: 776751920}
+    - target: {fileID: 2322450766193140855, guid: 16df0e2563e8447c0bc272198a781896, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 5043689389937103205}
+    - target: {fileID: 2322450766193140855, guid: 16df0e2563e8447c0bc272198a781896, type: 3}
+      propertyPath: minDistance
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5837467648001592211, guid: 16df0e2563e8447c0bc272198a781896, type: 3}
       propertyPath: m_LocalPosition.x
       value: -32.51548
@@ -68992,7 +69287,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6407736678903725442, guid: 16df0e2563e8447c0bc272198a781896, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1326648981}
   m_SourcePrefab: {fileID: 100100000, guid: 16df0e2563e8447c0bc272198a781896, type: 3}
 --- !u!1001 &1633338143099928453
 PrefabInstance:
@@ -69002,6 +69300,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1023614368310957752, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 5043689389937103205}
+    - target: {fileID: 1023614368310957752, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+      propertyPath: minDistance
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3627470309944724834, guid: 92b107729b83542b19c440f53ec39316, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 0
@@ -69077,7 +69383,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7857082100942668217, guid: 92b107729b83542b19c440f53ec39316, type: 3}
       insertIndex: -1
       addedObject: {fileID: 198130626}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8206070546360748685, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1067177300}
   m_SourcePrefab: {fileID: 100100000, guid: 92b107729b83542b19c440f53ec39316, type: 3}
 --- !u!1001 &2460642650868823008
 PrefabInstance:
@@ -69548,6 +69857,14 @@ PrefabInstance:
       propertyPath: bloodParticle
       value: 
       objectReference: {fileID: 699828412}
+    - target: {fileID: 8148480042399636740, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 5043689389937103205}
+    - target: {fileID: 8148480042399636740, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
+      propertyPath: minDistance
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8861776599536538001, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
       propertyPath: _player
       value: 
@@ -69563,7 +69880,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4311739321824559576, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 699828414}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9015020564793688450, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1466549470}
   m_SourcePrefab: {fileID: 100100000, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
 --- !u!1001 &9023815187369641851
 PrefabInstance:
