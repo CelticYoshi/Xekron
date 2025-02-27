@@ -39,14 +39,16 @@ public class AltEnemyMovement : MonoBehaviour
                 navMeshAgent.SetDestination(player.position);
                 _enemyAnimation.SetBool("IsMoving", true);
                 _enemyAnimation.SetBool("IsInRange", true);
+                navMeshAgent.isStopped = false;
             }
             else if(distance < minDistance)
             {
-                _enemyAnimation.SetBool("IsInRange", false);
+                //_enemyAnimation.SetBool("IsInRange", false);
                 _enemyAnimation.SetBool("IsMoving", false);
             }
-            if(distance > maxDistance)
+            else if(distance > maxDistance)
             {
+               navMeshAgent.isStopped = true;
                _enemyAnimation.SetBool("IsInRange", false);
                _enemyAnimation.SetBool("IsMoving", false); 
             }
