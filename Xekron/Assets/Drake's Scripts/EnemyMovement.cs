@@ -37,14 +37,27 @@ public class EnemyMovement : MonoBehaviour
         float distance = Vector3.Distance(player.position, transform.position);
         if (player != null)
         {
-            if(distance <= maxDistance && distance >= minDistance)
+            
+            if(distance < minDistance)
             {
-                //_enemyRb.velocity = movementDirection * speed;
-                //transform.LookAt(_player);
+                navMeshAgent.isStopped = true;
+                _enemyAnimation.SetBool("IsMoving", false);
+                _enemyAnimation.SetBool("IsInRange", false);
+            }
+            if(distance > maxDistance)
+            {
+                navMeshAgent.isStopped = true;
+                _enemyAnimation.SetBool("IsMoving", false);
+                _enemyAnimation.SetBool("IsInRange", false);
+            }
+            else
+            {
+                
+                navMeshAgent.isStopped = false;
                 navMeshAgent.SetDestination(player.position);
                 _enemyAnimation.SetBool("IsMoving", true);
                 _enemyAnimation.SetBool("IsInRange", true);
-            }
+            } 
         }    
             
             
