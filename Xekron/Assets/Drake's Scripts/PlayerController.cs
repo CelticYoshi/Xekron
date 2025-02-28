@@ -65,7 +65,7 @@ public class PlayerController : MonoBehaviour
         //Check if character controller is on the ground
         if(_characterController.isGrounded)
         {
-            Debug.Log (_characterController.isGrounded);
+            //Debug.Log (_characterController.isGrounded);
             _moveInput.y = Physics.gravity.y * gravityModifier * Time.deltaTime;
         }
 

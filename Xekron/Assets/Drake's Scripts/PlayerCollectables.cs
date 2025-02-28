@@ -18,7 +18,7 @@ public class PlayerCollectables : MonoBehaviour
     void Start()
     {
         playerAudio = GetComponent<AudioSource>();
-         GameObject.Find("Game Manager").GetComponent<GameManager>();
+         //GameObject.Find("Game Manager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame

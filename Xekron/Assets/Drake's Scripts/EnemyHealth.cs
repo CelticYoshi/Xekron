@@ -34,23 +34,23 @@ public class EnemyHealth : MonoBehaviour
     
     }
     
-    void OnCapsuleColliderHit(ControllerColliderHit hit)
-     {
-        if(hit.collider.gameObject.CompareTag("Bullet") && _canTakeDamage)
+    void  OnTriggerEnter(Collider other)
+    {
+        
+    if(other.gameObject.CompareTag("Bullet") && _canTakeDamage)
         {
+            Debug.Log("enemy takes damage");
             _canTakeDamage = false;
-            EnemyAttack enemyAttack = hit.gameObject.GetComponent<EnemyAttack>();
-            StartCoroutine(routine:TakeDamage(enemyAttack.Enemydamage()));
+            //BulletAttack bulletAttack = GetComponent<BulletAttack>();
+            //StartCoroutine(routine:TakeDamage(bulletAttack.Bulletdamage()));
             bloodParticle.Play();
         }
-     }
-
-     public void Update()
+    
+    }
+    public void Update()
      {
         if(_health <= 0)
         {
             this.gameObject.SetActive(false);
         }
-     }
-    
-    }
+     }}
