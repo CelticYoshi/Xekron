@@ -665,6 +665,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToFollow: {fileID: 686130388}
+--- !u!114 &980537575 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5099784309706240265, guid: 9ebd45a63c64344498a1f165a7930abd, type: 3}
+  m_PrefabInstance: {fileID: 6179440906281066195}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1075913487
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -754,6 +765,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 152252747320106498, guid: f0cdf62f5e0234d698cfdbb229399f8b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1853717473}
+    - targetCorrespondingSourceObject: {fileID: 152252747320106498, guid: f0cdf62f5e0234d698cfdbb229399f8b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1853717481}
   m_SourcePrefab: {fileID: 100100000, guid: f0cdf62f5e0234d698cfdbb229399f8b, type: 3}
 --- !u!1 &1182136435
 GameObject:
@@ -1267,6 +1281,19 @@ MonoBehaviour:
   playerHitSound: {fileID: 8300000, guid: f30f17b7b7a044d3c82e6630d5882735, type: 3}
   playerHealthText: {fileID: 1192337876}
   bloodParticle: {fileID: 961381500}
+--- !u!114 &1853717481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853717452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afc395832aec84e69b7e16f832192501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammoAmountText: {fileID: 980537575}
 --- !u!1 &2046502079
 GameObject:
   m_ObjectHideFlags: 0
@@ -3186,6 +3213,10 @@ PrefabInstance:
     - target: {fileID: 477662471019391357, guid: 9ebd45a63c64344498a1f165a7930abd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5099784309706240265, guid: 9ebd45a63c64344498a1f165a7930abd, type: 3}
+      propertyPath: m_text
+      value: 'Ammo:'
       objectReference: {fileID: 0}
     - target: {fileID: 5136974848307536832, guid: 9ebd45a63c64344498a1f165a7930abd, type: 3}
       propertyPath: m_Name

@@ -22,6 +22,8 @@ public class PlayerController : MonoBehaviour
     public AudioClip winSound;
     private bool _canPlayerJump;
     private Vector3 _moveInput;
+    private Ammo _ammo;
+
     private CharacterController _characterController;
     [SerializeField] private Animator _playerAnimation;
     [SerializeField] private Transform _player;
@@ -33,6 +35,7 @@ public class PlayerController : MonoBehaviour
     {
         _characterController = GetComponent<CharacterController>();
         playerAudio = GetComponent<AudioSource>();
+        _ammo = GetComponent<Ammo>();
     }
 
     // Update is called once per frame
@@ -86,7 +89,7 @@ public class PlayerController : MonoBehaviour
         theCamera.rotation = Quaternion.Euler(theCamera.rotation.eulerAngles + new Vector3(-mouseInput.y, 0f, 0f));
          
          //Handle Shooting
-        if(Input.GetMouseButtonDown(0))
+        if(Input.GetMouseButtonDown(0) && _ammo.GetAmmoAmount() > 0)
         {
             //Find the crosshair
             RaycastHit hit;
@@ -104,7 +107,9 @@ public class PlayerController : MonoBehaviour
             
             //Create the bullet
             Instantiate(bullet, firePoint.position, firePoint.rotation);
-            playerAudio.PlayOneShot(shootSound, .5f);   
+            playerAudio.PlayOneShot(shootSound, .5f);
+
+            _ammo.RemoveAmmo();   
         }
 
     }
