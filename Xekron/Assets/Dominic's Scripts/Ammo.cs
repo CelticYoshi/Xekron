@@ -8,18 +8,12 @@ public class Ammo : MonoBehaviour
 {
      public TextMeshProUGUI ammoAmountText;
     public int _ammoAmount = 12;
-<<<<<<< Updated upstream
-=======
-    public AudioClip loseSound;
-
-    private AudioSource playerAudio;
->>>>>>> Stashed changes
 
     // Start is called before the first frame update
     void Start()
     {
         DisplayAmmoAmount();
-        playerAudio = GetComponent<AudioSource>();
+        //playerAudio = GetComponent<AudioSource>();
     }
 
     public void RemoveAmmo()
@@ -53,7 +47,7 @@ public class Ammo : MonoBehaviour
     {
         if (_ammoAmount <= 0)
         {
-            playerAudio.PlayOneShot(loseSound, 1.0f);
+            //playerAudio.PlayOneShot(loseSound, 1.0f);
             StartCoroutine(OutOfAmmo());
         }
     }
