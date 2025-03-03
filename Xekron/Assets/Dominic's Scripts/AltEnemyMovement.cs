@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class AltEnemyMovement : MonoBehaviour
 {
-    public AudioClip EnemyHurt;
+    
     public ParticleSystem bloodParticle;
     public float speed = 10f;
     public float minDistance = 1.5f;
@@ -13,7 +13,7 @@ public class AltEnemyMovement : MonoBehaviour
     public Transform player;
     private NavMeshAgent navMeshAgent;
     private Rigidbody _zombieRb;
-    private AudioSource _enemySound;
+    
     private GameObject _player;
     [SerializeField] private Animator _enemyAnimation;
 
@@ -23,7 +23,7 @@ public class AltEnemyMovement : MonoBehaviour
         //_zombieRb = GetComponent<Rigidbody>();
         _player = GameObject.Find("Player");
         navMeshAgent = GetComponent<NavMeshAgent>();
-        _enemySound = GetComponent<AudioSource>();
+        
     }
 
     // Update is called once per frame
@@ -55,14 +55,14 @@ public class AltEnemyMovement : MonoBehaviour
             
         }
     }
-    void OnTriggerEnter(Collider other)
-    {
-        if(other.gameObject.CompareTag("Bullet"))
-        {
-            Debug.Log("I hit the enemy");
-            _enemySound.PlayOneShot(EnemyHurt, 1.0f);
-            bloodParticle.Play();
+    //void OnTriggerEnter(Collider other)
+    //{
+        //if(other.gameObject.CompareTag("Bullet"))
+        //{
+            //Debug.Log("I hit the enemy");
+            //_enemySound.PlayOneShot(EnemyHurt, 1.0f);
+            //bloodParticle.Play();
             //Destroy(this.gameObject);
-        }
-    }
+        //}
+    //}
 }

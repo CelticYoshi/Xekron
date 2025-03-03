@@ -2620,8 +2620,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 3
   _canTakeDamage: 1
+  _enemyAmount: 0
+  enemyText: {fileID: 75658714}
   damageAmount: 1
   bloodParticle: {fileID: 198130628}
+  EnemyHurt: {fileID: 8300000, guid: 6a82b5e29ae3e49b9b1df7d78390a67a, type: 3}
 --- !u!1001 &103911691
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22198,8 +22201,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 3
   _canTakeDamage: 1
+  _enemyAmount: 0
+  enemyText: {fileID: 75658714}
   damageAmount: 1
   bloodParticle: {fileID: 198130628}
+  EnemyHurt: {fileID: 8300000, guid: 6a82b5e29ae3e49b9b1df7d78390a67a, type: 3}
 --- !u!1001 &709066692
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24672,8 +24678,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 3
   _canTakeDamage: 1
+  _enemyAmount: 0
+  enemyText: {fileID: 75658714}
   damageAmount: 1
   bloodParticle: {fileID: 198130628}
+  EnemyHurt: {fileID: 8300000, guid: 6a82b5e29ae3e49b9b1df7d78390a67a, type: 3}
 --- !u!1001 &783304432
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28991,8 +29000,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 3
   _canTakeDamage: 1
+  _enemyAmount: 0
+  enemyText: {fileID: 75658714}
   damageAmount: 1
   bloodParticle: {fileID: 198130628}
+  EnemyHurt: {fileID: 8300000, guid: 6a82b5e29ae3e49b9b1df7d78390a67a, type: 3}
 --- !u!1001 &910261967
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34023,8 +34035,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 3
   _canTakeDamage: 1
+  _enemyAmount: 0
+  enemyText: {fileID: 75658714}
   damageAmount: 1
   bloodParticle: {fileID: 198130628}
+  EnemyHurt: {fileID: 8300000, guid: 6a82b5e29ae3e49b9b1df7d78390a67a, type: 3}
 --- !u!1001 &1070730286
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40782,8 +40797,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 3
   _canTakeDamage: 1
+  _enemyAmount: 0
+  enemyText: {fileID: 75658714}
   damageAmount: 1
   bloodParticle: {fileID: 198130628}
+  EnemyHurt: {fileID: 8300000, guid: 6a82b5e29ae3e49b9b1df7d78390a67a, type: 3}
 --- !u!1001 &1236552582
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44146,8 +44164,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 3
   _canTakeDamage: 1
+  _enemyAmount: 0
+  enemyText: {fileID: 75658714}
   damageAmount: 1
   bloodParticle: {fileID: 198130628}
+  EnemyHurt: {fileID: 8300000, guid: 6a82b5e29ae3e49b9b1df7d78390a67a, type: 3}
 --- !u!1001 &1329503634
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47686,8 +47707,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 3
   _canTakeDamage: 1
+  _enemyAmount: 0
+  enemyText: {fileID: 75658714}
   damageAmount: 1
   bloodParticle: {fileID: 198130628}
+  EnemyHurt: {fileID: 8300000, guid: 6a82b5e29ae3e49b9b1df7d78390a67a, type: 3}
 --- !u!1001 &1466592982
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55563,8 +55587,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 3
   _canTakeDamage: 1
+  _enemyAmount: 0
+  enemyText: {fileID: 75658714}
   damageAmount: 1
   bloodParticle: {fileID: 198130628}
+  EnemyHurt: {fileID: 8300000, guid: 6a82b5e29ae3e49b9b1df7d78390a67a, type: 3}
 --- !u!1001 &1724323644
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -65310,8 +65337,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 3
   _canTakeDamage: 1
+  _enemyAmount: 0
+  enemyText: {fileID: 75658714}
   damageAmount: 1
   bloodParticle: {fileID: 198130628}
+  EnemyHurt: {fileID: 8300000, guid: 6a82b5e29ae3e49b9b1df7d78390a67a, type: 3}
 --- !u!1001 &2020285163
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -69776,6 +69806,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ammoAmountText: {fileID: 1401703007}
+  _ammoAmount: 50
+  loseSound: {fileID: 8300000, guid: dfbcebd0db2659d4b9b98b4749d7ac93, type: 3}
 --- !u!1001 &5357399451304903573
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -69900,6 +69932,10 @@ PrefabInstance:
     - target: {fileID: 7448876866191800030, guid: fd73123be529b42fd89cd36b8e0aa3ef, type: 3}
       propertyPath: m_Name
       value: SM_Veh_TractorOld_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448876866191800030, guid: fd73123be529b42fd89cd36b8e0aa3ef, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7448876866191800030, guid: fd73123be529b42fd89cd36b8e0aa3ef, type: 3}
       propertyPath: m_TagString

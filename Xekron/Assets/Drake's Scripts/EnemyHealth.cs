@@ -8,13 +8,18 @@ public class EnemyHealth : MonoBehaviour
 {
     public int _health = 3;
     public bool _canTakeDamage = true;
+    public int _enemyAmount;
+     public TextMeshProUGUI enemyText;
     
     public float damageAmount = 1;
     public ParticleSystem bloodParticle;
+    public AudioClip EnemyHurt;
+    private AudioSource _enemySound;
+    
 
     void Start()
     {
-        
+        _enemySound = GetComponent<AudioSource>();
     }
 
     public IEnumerator TakeDamage(int damageAmount)
@@ -40,11 +45,11 @@ public class EnemyHealth : MonoBehaviour
     if(other.gameObject.CompareTag("Bullet") && _canTakeDamage)
         {
             Debug.Log("enemy takes damage");
+            _enemySound.PlayOneShot(EnemyHurt, 1.0f);
             bloodParticle.Play();
             _canTakeDamage = false;
-            BulletAttack bulletAttack = GetComponent<BulletAttack>();
-            StartCoroutine(routine:TakeDamage(bulletAttack.Bulletdamage()));
-            
+            //BulletAttack bulletAttack = GetComponent<BulletAttack>();
+            StartCoroutine(routine:TakeDamage(1));
         }
     
     }
@@ -53,5 +58,7 @@ public class EnemyHealth : MonoBehaviour
         if(_health <= 0)
         {
             this.gameObject.SetActive(false);
+            _enemyAmount = GameObject.FindGameObjectsWithTag("Enemy").Length;
+            enemyText.text = "Enemies Remaining: " + _enemyAmount.ToString();
         }
      }}
