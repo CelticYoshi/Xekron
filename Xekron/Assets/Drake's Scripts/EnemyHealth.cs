@@ -40,10 +40,11 @@ public class EnemyHealth : MonoBehaviour
     if(other.gameObject.CompareTag("Bullet") && _canTakeDamage)
         {
             Debug.Log("enemy takes damage");
-            _canTakeDamage = false;
-            //BulletAttack bulletAttack = GetComponent<BulletAttack>();
-            //StartCoroutine(routine:TakeDamage(bulletAttack.Bulletdamage()));
             bloodParticle.Play();
+            _canTakeDamage = false;
+            BulletAttack bulletAttack = GetComponent<BulletAttack>();
+            StartCoroutine(routine:TakeDamage(bulletAttack.Bulletdamage()));
+            
         }
     
     }
