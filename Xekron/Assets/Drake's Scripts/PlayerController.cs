@@ -79,6 +79,12 @@ public class PlayerController : MonoBehaviour
             playerAudio.PlayOneShot(jumpSound, 1.0f); 
         }
 
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+            new WaitForSeconds(3f);
+            _ammo.AddAmmo();
+        }
+
         _characterController.Move(_moveInput * Time.deltaTime);
 
         //Camera rotation
@@ -146,4 +152,3 @@ public class PlayerController : MonoBehaviour
     }
         
 }
-
