@@ -69793,21 +69793,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &5043689389937103233
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 224838984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afc395832aec84e69b7e16f832192501, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ammoAmountText: {fileID: 1401703007}
-  _ammoAmount: 50
-  loseSound: {fileID: 8300000, guid: dfbcebd0db2659d4b9b98b4749d7ac93, type: 3}
 --- !u!1001 &5357399451304903573
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -70114,6 +70099,22 @@ PrefabInstance:
       propertyPath: confettiParticle
       value: 
       objectReference: {fileID: 1126869884}
+    - target: {fileID: 1274659275237762309, guid: f0cdf62f5e0234d698cfdbb229399f8b, type: 3}
+      propertyPath: loseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: dfbcebd0db2659d4b9b98b4749d7ac93, type: 3}
+    - target: {fileID: 1274659275237762309, guid: f0cdf62f5e0234d698cfdbb229399f8b, type: 3}
+      propertyPath: _ammoAmount
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1274659275237762309, guid: f0cdf62f5e0234d698cfdbb229399f8b, type: 3}
+      propertyPath: ammoAmountText
+      value: 
+      objectReference: {fileID: 1401703007}
+    - target: {fileID: 5003014507958256951, guid: f0cdf62f5e0234d698cfdbb229399f8b, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5385334527648788374, guid: f0cdf62f5e0234d698cfdbb229399f8b, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.01
@@ -70141,9 +70142,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 152252747320106498, guid: f0cdf62f5e0234d698cfdbb229399f8b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5043689389937103224}
-    - targetCorrespondingSourceObject: {fileID: 152252747320106498, guid: f0cdf62f5e0234d698cfdbb229399f8b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5043689389937103233}
   m_SourcePrefab: {fileID: 100100000, guid: f0cdf62f5e0234d698cfdbb229399f8b, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
