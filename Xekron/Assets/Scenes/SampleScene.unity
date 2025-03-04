@@ -213,6 +213,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+--- !u!198 &254239747 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 338200918799984106, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+  m_PrefabInstance: {fileID: 1387006767}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &300261035 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 957358805128080527, guid: f0cdf62f5e0234d698cfdbb229399f8b, type: 3}
@@ -671,6 +676,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1075608491 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8206070546360748685, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+  m_PrefabInstance: {fileID: 1387006767}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1075608499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075608491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0e4f372f23f949c8b3da1f1e8b59fc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: 3
+  _canTakeDamage: 1
+  _enemyAmount: 0
+  enemyText: {fileID: 1349326915}
+  damageAmount: 1
+  bloodParticle: {fileID: 254239747}
+  EnemyHurt: {fileID: 8300000, guid: 6a82b5e29ae3e49b9b1df7d78390a67a, type: 3}
 --- !u!1001 &1075913487
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -997,7 +1026,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8206070546360748685, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1075608499}
   m_SourcePrefab: {fileID: 100100000, guid: 92b107729b83542b19c440f53ec39316, type: 3}
 --- !u!114 &1474862456 stripped
 MonoBehaviour:
@@ -1073,7 +1105,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6407736678903725442, guid: 16df0e2563e8447c0bc272198a781896, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1761536296}
   m_SourcePrefab: {fileID: 100100000, guid: 16df0e2563e8447c0bc272198a781896, type: 3}
 --- !u!1 &1555606108
 GameObject:
@@ -1182,6 +1217,30 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &1761536288 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6407736678903725442, guid: 16df0e2563e8447c0bc272198a781896, type: 3}
+  m_PrefabInstance: {fileID: 1487841295}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1761536296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761536288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0e4f372f23f949c8b3da1f1e8b59fc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: 3
+  _canTakeDamage: 1
+  _enemyAmount: 0
+  enemyText: {fileID: 0}
+  damageAmount: 1
+  bloodParticle: {fileID: 0}
+  EnemyHurt: {fileID: 8300000, guid: 6a82b5e29ae3e49b9b1df7d78390a67a, type: 3}
 --- !u!1 &1853717452 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 152252747320106498, guid: f0cdf62f5e0234d698cfdbb229399f8b, type: 3}
@@ -1305,6 +1364,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ammoAmountText: {fileID: 980537575}
   _ammoAmount: 12
+  loseSound: {fileID: 0}
 --- !u!114 &1853717483 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8346827806802232090, guid: f0cdf62f5e0234d698cfdbb229399f8b, type: 3}

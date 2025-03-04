@@ -26,7 +26,7 @@ public class Ammo : MonoBehaviour
 
     public void AddAmmo()
     {
-        _ammoAmount += 12;
+        _ammoAmount = 12;
         DisplayAmmoAmount();
     }
 
