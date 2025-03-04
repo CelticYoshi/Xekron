@@ -213,6 +213,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+--- !u!198 &228296950 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5496687046567988927, guid: 16df0e2563e8447c0bc272198a781896, type: 3}
+  m_PrefabInstance: {fileID: 1487841295}
+  m_PrefabAsset: {fileID: 0}
 --- !u!198 &254239747 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 338200918799984106, guid: 92b107729b83542b19c440f53ec39316, type: 3}
@@ -286,7 +291,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9015020564793688450, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 664145321}
   m_SourcePrefab: {fileID: 100100000, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
 --- !u!1 &582354899
 GameObject:
@@ -393,6 +401,30 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &664145313 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9015020564793688450, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
+  m_PrefabInstance: {fileID: 306490150}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &664145321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664145313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0e4f372f23f949c8b3da1f1e8b59fc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: 3
+  _canTakeDamage: 1
+  _enemyAmount: 0
+  enemyText: {fileID: 0}
+  damageAmount: 1
+  bloodParticle: {fileID: 1312538080}
+  EnemyHurt: {fileID: 8300000, guid: 6a82b5e29ae3e49b9b1df7d78390a67a, type: 3}
 --- !u!4 &686130388 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7404455933905804831, guid: f0cdf62f5e0234d698cfdbb229399f8b, type: 3}
@@ -952,6 +984,11 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!198 &1312538080 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 906145695856882793, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
+  m_PrefabInstance: {fileID: 306490150}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1349326915 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4744749759418587081, guid: 9ebd45a63c64344498a1f165a7930abd, type: 3}
@@ -1237,9 +1274,9 @@ MonoBehaviour:
   _health: 3
   _canTakeDamage: 1
   _enemyAmount: 0
-  enemyText: {fileID: 0}
+  enemyText: {fileID: 1349326915}
   damageAmount: 1
-  bloodParticle: {fileID: 0}
+  bloodParticle: {fileID: 228296950}
   EnemyHurt: {fileID: 8300000, guid: 6a82b5e29ae3e49b9b1df7d78390a67a, type: 3}
 --- !u!1 &1853717452 stripped
 GameObject:

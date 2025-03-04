@@ -21,7 +21,7 @@ public class Ammo : MonoBehaviour
     public void RemoveAmmo()
     {
         _ammoAmount -= 1;
-        ammoAmountText.text = _ammoAmount.ToString();
+        DisplayAmmoAmount();
     }
 
     public void AddAmmo()
@@ -44,15 +44,4 @@ public class Ammo : MonoBehaviour
     {
         
     }
-
-    public void AmmoRunsOut()
-    {
-        
-        if(Input.GetKeyDown(KeyCode.R) )
-         {
-            AddAmmo();
-
-        }
-        
-        }   
 }
