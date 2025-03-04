@@ -48,7 +48,7 @@ public class Ammo : MonoBehaviour
     public void AmmoRunsOut()
     {
         
-        if(Input.GetKeyDown(KeyCode.R) && _ammoAmount <= 0)
+        if(Input.GetKeyDown(KeyCode.R) )
          {
             AddAmmo();
 
