@@ -421,7 +421,7 @@ MonoBehaviour:
   _health: 3
   _canTakeDamage: 1
   _enemyAmount: 0
-  enemyText: {fileID: 0}
+  enemyText: {fileID: 1349326915}
   damageAmount: 1
   bloodParticle: {fileID: 1312538080}
   EnemyHurt: {fileID: 8300000, guid: 6a82b5e29ae3e49b9b1df7d78390a67a, type: 3}
@@ -845,6 +845,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1182136437}
   - component: {fileID: 1182136436}
+  - component: {fileID: 1182136438}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -883,6 +884,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1182136438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1182136435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f481aa676a3184a469031c883bdec0f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeRemaining: 180
+  timerText: {fileID: 1494838614}
+  loseSound: {fileID: 0}
 --- !u!114 &1192337876 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7847624661735997090, guid: 9ebd45a63c64344498a1f165a7930abd, type: 3}
@@ -1147,6 +1163,17 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1761536296}
   m_SourcePrefab: {fileID: 100100000, guid: 16df0e2563e8447c0bc272198a781896, type: 3}
+--- !u!114 &1494838614 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3894198482106143657, guid: 9ebd45a63c64344498a1f165a7930abd, type: 3}
+  m_PrefabInstance: {fileID: 6179440906281066195}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1555606108
 GameObject:
   m_ObjectHideFlags: 0
