@@ -20,7 +20,9 @@ public class PlayerController : MonoBehaviour
     public AudioClip jumpSound;
     public AudioClip playerHitSound;
     public AudioClip winSound;
+    public AudioClip reloadSound;
     private bool _canPlayerJump;
+    private bool _canPlayerReload = true;
     private Vector3 _moveInput;
     private Ammo _ammo;
 
@@ -79,10 +81,10 @@ public class PlayerController : MonoBehaviour
             playerAudio.PlayOneShot(jumpSound, 1.0f); 
         }
 
-        if(Input.GetKeyDown(KeyCode.R))
+        if(Input.GetKeyDown(KeyCode.R) && _canPlayerReload && _ammo.GetAmmoAmount() < 12)
         {
-            new WaitForSeconds(3f);
-            _ammo.AddAmmo();
+           StartCoroutine(Reload());
+           _canPlayerReload = false;
         }
 
         _characterController.Move(_moveInput * Time.deltaTime);
@@ -149,6 +151,15 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    private IEnumerator Reload()
+    {
+        playerAudio.PlayOneShot(reloadSound, 1.0f);
+        yield return new WaitForSeconds(2f);
+        _ammo.AddAmmo();
+        yield return new WaitForSeconds(2f);
+        _canPlayerReload = true;
     }
         
 }
