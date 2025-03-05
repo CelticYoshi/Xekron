@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -11,6 +12,8 @@ public class GameManager : MonoBehaviour
     public int _collectableAmount;
      public TextMeshProUGUI enemyText;
      public TextMeshProUGUI collectableText; 
+     public GameObject tractor;
+     public bool tractorIsActive = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,8 +24,8 @@ public class GameManager : MonoBehaviour
         
         _collectableAmount = GameObject.FindGameObjectsWithTag("Collectable").Length;
         collectableText.text = "Collectables Remaining: " + _collectableAmount.ToString();
+        tractorIsActive = false;
     }
-
     public void UpdateCollectableAmount()
     {
         _collectableAmount -= 1;
@@ -30,4 +33,11 @@ public class GameManager : MonoBehaviour
     }
     // Update is called once per frame
     
+    public void TractorConditions()
+    {
+        if (_enemyAmount <=0 && _collectableAmount <=0)
+        {
+            tractorIsActive = true;
+        }
+    }
 }
