@@ -9,19 +9,21 @@ public class GameOverConditions : MonoBehaviour
     public int _collectableAmount;
     public bool _noMoreCollectables = false;
     public bool _tractorIsActive = false;
+    public GameObject tractor;
     // Start is called before the first frame update
     void Start()
     {
-        _enemyAmount = GetComponent<GameManager>()._enemyAmount;
-        _collectableAmount = GetComponent<GameManager>()._collectableAmount;
+        tractor.gameObject.SetActive(false);
+        //_enemyAmount = GetComponent<GameManager>()._enemyAmount;
+        //_collectableAmount = GetComponent<GameManager>()._collectableAmount;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (_enemyAmount <=0 && _collectableAmount <= 0)
+        if (_noMoreEnemies  && _noMoreCollectables)
         {
-            _tractorIsActive = true;
+            tractor.gameObject.SetActive(true);
         }
     }
 

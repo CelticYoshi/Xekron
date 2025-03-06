@@ -27,7 +27,7 @@ public class EnemyHealth : MonoBehaviour
         _health -= damageAmount;
         
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(.25f);
         _canTakeDamage = true;
     }
 

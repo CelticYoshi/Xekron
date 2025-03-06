@@ -5764,6 +5764,10 @@ PrefabInstance:
       propertyPath: minDistance
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1023614368310957752, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+      propertyPath: bloodParticle
+      value: 
+      objectReference: {fileID: 1980765093}
     - target: {fileID: 3627470309944724834, guid: 92b107729b83542b19c440f53ec39316, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 0
@@ -24617,6 +24621,10 @@ PrefabInstance:
       propertyPath: minDistance
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1023614368310957752, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+      propertyPath: bloodParticle
+      value: 
+      objectReference: {fileID: 67570840}
     - target: {fileID: 3627470309944724834, guid: 92b107729b83542b19c440f53ec39316, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 0
@@ -25664,6 +25672,10 @@ PrefabInstance:
       propertyPath: minDistance
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8148480042399636740, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
+      propertyPath: bloodParticle
+      value: 
+      objectReference: {fileID: 1746547296}
     - target: {fileID: 8861776599536538001, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
       propertyPath: _player
       value: 
@@ -26324,6 +26336,10 @@ PrefabInstance:
       propertyPath: minDistance
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8148480042399636740, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
+      propertyPath: bloodParticle
+      value: 
+      objectReference: {fileID: 1181918185}
     - target: {fileID: 8861776599536538001, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
       propertyPath: _player
       value: 
@@ -32400,7 +32416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f481aa676a3184a469031c883bdec0f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 180
+  timeRemaining: 300
   timerText: {fileID: 261877880}
   loseSound: {fileID: 8300000, guid: dfbcebd0db2659d4b9b98b4749d7ac93, type: 3}
 --- !u!82 &1007452524
@@ -32516,6 +32532,7 @@ MonoBehaviour:
   _collectableAmount: 0
   _noMoreCollectables: 0
   _tractorIsActive: 0
+  tractor: {fileID: 1067342502}
 --- !u!1001 &1008612216
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33552,6 +33569,10 @@ PrefabInstance:
       propertyPath: minDistance
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1023614368310957752, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+      propertyPath: bloodParticle
+      value: 
+      objectReference: {fileID: 379164151}
     - target: {fileID: 3627470309944724834, guid: 92b107729b83542b19c440f53ec39316, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 0
@@ -53345,6 +53366,10 @@ PrefabInstance:
       propertyPath: minDistance
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1023614368310957752, guid: 92b107729b83542b19c440f53ec39316, type: 3}
+      propertyPath: bloodParticle
+      value: 
+      objectReference: {fileID: 1924024504}
     - target: {fileID: 3627470309944724834, guid: 92b107729b83542b19c440f53ec39316, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 0
@@ -53913,6 +53938,10 @@ PrefabInstance:
       propertyPath: minDistance
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8148480042399636740, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
+      propertyPath: bloodParticle
+      value: 
+      objectReference: {fileID: 2062396299}
     - target: {fileID: 8861776599536538001, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
       propertyPath: _player
       value: 
@@ -69477,6 +69506,10 @@ PrefabInstance:
       propertyPath: minDistance
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2322450766193140855, guid: 16df0e2563e8447c0bc272198a781896, type: 3}
+      propertyPath: bloodParticle
+      value: 
+      objectReference: {fileID: 776751920}
     - target: {fileID: 5837467648001592211, guid: 16df0e2563e8447c0bc272198a781896, type: 3}
       propertyPath: m_LocalPosition.x
       value: -32.51548
@@ -70154,6 +70187,10 @@ PrefabInstance:
       propertyPath: minDistance
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8148480042399636740, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
+      propertyPath: bloodParticle
+      value: 
+      objectReference: {fileID: 699828412}
     - target: {fileID: 8861776599536538001, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
       propertyPath: _player
       value: 
@@ -70263,10 +70300,15 @@ PrefabInstance:
       value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: 8919833021631210301, guid: f0cdf62f5e0234d698cfdbb229399f8b, type: 3}
+      propertyPath: reloadSound
+      value: 
+      objectReference: {fileID: 8300000, guid: a8d30f8378bd34f43bc9a2abb62a90bb, type: 3}
+    - target: {fileID: 8919833021631210301, guid: f0cdf62f5e0234d698cfdbb229399f8b, type: 3}
       propertyPath: playerHitSound
       value: 
       objectReference: {fileID: 8300000, guid: f30f17b7b7a044d3c82e6630d5882735, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8346827806802232090, guid: f0cdf62f5e0234d698cfdbb229399f8b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 957358805128080527, guid: f0cdf62f5e0234d698cfdbb229399f8b, type: 3}
