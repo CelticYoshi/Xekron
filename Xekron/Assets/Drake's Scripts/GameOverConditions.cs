@@ -21,7 +21,7 @@ public class GameOverConditions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_noMoreEnemies  && _noMoreCollectables)
+        if (_noMoreEnemies && _noMoreCollectables)
         {
             tractor.gameObject.SetActive(true);
         }

@@ -58,7 +58,7 @@ public class EnemyHealth : MonoBehaviour
         if(_health <= 0)
         {
             this.gameObject.SetActive(false);
-            _enemyAmount = GameObject.FindGameObjectsWithTag("Enemy").Length;
-            enemyText.text = "Enemies Remaining: " + _enemyAmount.ToString();
+            GameObject.Find("GameManager").GetComponent<GameManager>().UpdateEnemyAmount();
+            //enemyText.text = "Enemies Remaining: " + _enemyAmount.ToString();
         }
      }}

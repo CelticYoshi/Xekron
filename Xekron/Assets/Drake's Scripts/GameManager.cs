@@ -28,31 +28,26 @@ public class GameManager : MonoBehaviour
     }
     public void UpdateCollectableAmount()
     {
-        if(_collectableAmount > 0){
-            _collectableAmount -= 1;
-            collectableText.text = "Collectables Remaining: " + _collectableAmount.ToString();
-        }
-        else{
+        _collectableAmount -= 1;
+        collectableText.text = "Collectables Remaining: " + _collectableAmount.ToString();
+        if(_collectableAmount <= 0)
+        {
             
-            Debug.Log("Ran Out Of Collectables");
             GameObject.Find("GameManager").GetComponent<GameOverConditions>().NoMoreCollectables();
         }
-        
         
     }
     // Update is called once per frame
     
     public void UpdateEnemyAmount()
     {
-        if(_enemyAmount > 0)
+        _enemyAmount -= 1;
+        enemyText.text = "Enemies Remaining: " + _enemyAmount.ToString();
+        if(_enemyAmount <= 0)
         {
-            _enemyAmount -= 1;
-            enemyText.text = "Enemies Remaining: " + _enemyAmount.ToString();
-        }
-        else
-        {
-            Debug.Log("Ran Out Of Enemies");
+            
             GameObject.Find("GameManager").GetComponent<GameOverConditions>().NoMoreEnemies();
         }
+    
     }
 }
