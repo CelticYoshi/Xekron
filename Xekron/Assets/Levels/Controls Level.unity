@@ -12493,6 +12493,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1651341061590448812, guid: f1fd1306cfea840d9ba833d95d940dbe, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 410281182}
+    - target: {fileID: 1651341061590448812, guid: f1fd1306cfea840d9ba833d95d940dbe, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnPlayButtonPressed
+      objectReference: {fileID: 0}
     - target: {fileID: 3868930326503736796, guid: f1fd1306cfea840d9ba833d95d940dbe, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -12580,8 +12588,29 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8031030344807925092, guid: f1fd1306cfea840d9ba833d95d940dbe, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 410281182}
   m_SourcePrefab: {fileID: 100100000, guid: f1fd1306cfea840d9ba833d95d940dbe, type: 3}
+--- !u!1 &410281181 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8031030344807925092, guid: f1fd1306cfea840d9ba833d95d940dbe, type: 3}
+  m_PrefabInstance: {fileID: 410281180}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &410281182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410281181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e3838f0cfe034d0ab1f18d3d6286c4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingScene: 0
 --- !u!1001 &415266818
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21791,7 +21820,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d1be8897492ee854b9a05f5371d103ce, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 07a70cfc160195444bfe0f0762a5cef7, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
@@ -32768,6 +32797,7 @@ GameObject:
   - component: {fileID: 1007452523}
   - component: {fileID: 1007452524}
   - component: {fileID: 1007452525}
+  - component: {fileID: 1007452526}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -32782,7 +32812,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1007452520}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6ed8e61a14c3413384c9e467b1bdd6c, type: 3}
   m_Name: 
@@ -32937,6 +32967,14 @@ MonoBehaviour:
   _noMoreCollectables: 0
   _tractorIsActive: 0
   tractor: {fileID: 1067342502}
+--- !u!81 &1007452526
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007452520}
+  m_Enabled: 1
 --- !u!1001 &1008612216
 PrefabInstance:
   m_ObjectHideFlags: 0

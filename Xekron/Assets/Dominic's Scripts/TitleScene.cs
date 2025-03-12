@@ -15,6 +15,7 @@ public class TitleScene : MonoBehaviour
 
     public void OnQuitButtonPressed()
     {
+        Debug.Log("I Quit the Game");
         Application.Quit();
     }
 
