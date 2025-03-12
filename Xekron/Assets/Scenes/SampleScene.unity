@@ -283,7 +283,7 @@ PrefabInstance:
     - target: {fileID: 8861776599536538001, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
       propertyPath: _player
       value: 
-      objectReference: {fileID: 1853717483}
+      objectReference: {fileID: 0}
     - target: {fileID: 9015020564793688450, guid: b9d76f3f2c9aa409b877940150fb027e, type: 3}
       propertyPath: m_Name
       value: SM_Chr_Scarecrow_01
@@ -792,6 +792,10 @@ PrefabInstance:
       propertyPath: ammoAmountText
       value: 
       objectReference: {fileID: 980537575}
+    - target: {fileID: 5638017896008937619, guid: f0cdf62f5e0234d698cfdbb229399f8b, type: 3}
+      propertyPath: playerHealthText
+      value: 
+      objectReference: {fileID: 1192337876}
     - target: {fileID: 5839906390694054205, guid: f0cdf62f5e0234d698cfdbb229399f8b, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -854,6 +858,7 @@ GameObject:
   - component: {fileID: 1182136437}
   - component: {fileID: 1182136436}
   - component: {fileID: 1182136438}
+  - component: {fileID: 1182136439}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -908,7 +913,103 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeRemaining: 180
   timerText: {fileID: 1494838614}
-  loseSound: {fileID: 0}
+  loseSound: {fileID: 8300000, guid: bb6b57ab0fd5a497c99ffc58096655f8, type: 3}
+--- !u!82 &1182136439
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1182136435}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: bb6b57ab0fd5a497c99ffc58096655f8, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &1192337876 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7847624661735997090, guid: 9ebd45a63c64344498a1f165a7930abd, type: 3}
@@ -1081,7 +1182,7 @@ PrefabInstance:
     - target: {fileID: 8189564837308811652, guid: 92b107729b83542b19c440f53ec39316, type: 3}
       propertyPath: _player
       value: 
-      objectReference: {fileID: 1853717483}
+      objectReference: {fileID: 0}
     - target: {fileID: 8206070546360748685, guid: 92b107729b83542b19c440f53ec39316, type: 3}
       propertyPath: m_Name
       value: SM_Chr_Farmer_Male_01
@@ -1164,7 +1265,7 @@ PrefabInstance:
     - target: {fileID: 8721805088452347476, guid: 16df0e2563e8447c0bc272198a781896, type: 3}
       propertyPath: _player
       value: 
-      objectReference: {fileID: 1853717483}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1439,17 +1540,6 @@ MonoBehaviour:
   ammoAmountText: {fileID: 980537575}
   _ammoAmount: 12
   loseSound: {fileID: 0}
---- !u!114 &1853717483 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8346827806802232090, guid: f0cdf62f5e0234d698cfdbb229399f8b, type: 3}
-  m_PrefabInstance: {fileID: 1075913487}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1853717452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d3b600a61f4e4d3f86736ea864b2911, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2046502079
 GameObject:
   m_ObjectHideFlags: 0
