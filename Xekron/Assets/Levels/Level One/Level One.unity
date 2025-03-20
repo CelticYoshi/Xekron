@@ -2926,7 +2926,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 198640660634256096, guid: 6b2d1d33fdbf1a340a25ad352c47f593, type: 3}
       propertyPath: randomSeed
-      value: 1296846948
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12133,7 +12133,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 198197227958877610, guid: d3c6c6fac7d04684694d9183c4f2a8f4, type: 3}
       propertyPath: randomSeed
-      value: -785012754
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 198197227958877610, guid: d3c6c6fac7d04684694d9183c4f2a8f4, type: 3}
       propertyPath: ShapeModule.boxX
@@ -12145,7 +12145,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 198207640282620324, guid: d3c6c6fac7d04684694d9183c4f2a8f4, type: 3}
       propertyPath: randomSeed
-      value: -1850818557
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 198207640282620324, guid: d3c6c6fac7d04684694d9183c4f2a8f4, type: 3}
       propertyPath: ShapeModule.boxX
@@ -35884,7 +35884,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 198640660634256096, guid: 6b2d1d33fdbf1a340a25ad352c47f593, type: 3}
       propertyPath: randomSeed
-      value: -1434675794
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 198640660634256096, guid: 6b2d1d33fdbf1a340a25ad352c47f593, type: 3}
       propertyPath: ColorModule.gradient.maxGradient.key1.a
@@ -40928,7 +40928,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 198640660634256096, guid: 6b2d1d33fdbf1a340a25ad352c47f593, type: 3}
       propertyPath: randomSeed
-      value: -156004191
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -48655,7 +48655,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 198640660634256096, guid: 6b2d1d33fdbf1a340a25ad352c47f593, type: 3}
       propertyPath: randomSeed
-      value: -212411824
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 198640660634256096, guid: 6b2d1d33fdbf1a340a25ad352c47f593, type: 3}
       propertyPath: ColorModule.gradient.maxGradient.key1.a
@@ -54015,7 +54015,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 198940010365373708, guid: 3758ed06cdf471640b0fdccdc74e21df, type: 3}
       propertyPath: randomSeed
-      value: 841961334
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -57121,7 +57121,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 198640660634256096, guid: 6b2d1d33fdbf1a340a25ad352c47f593, type: 3}
       propertyPath: randomSeed
-      value: -1017290859
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 198640660634256096, guid: 6b2d1d33fdbf1a340a25ad352c47f593, type: 3}
       propertyPath: ColorModule.gradient.maxGradient.key1.a
@@ -62453,6 +62453,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 452907902}
+  - {fileID: 2093793084}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1909942505
@@ -67714,8 +67715,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2093793083}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0.10561521, y: -0.7419098, z: 0.120345585, w: 0.6511008}
+  m_LocalPosition: {x: 1.439516, y: -7.500292, z: -9.453287}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -67727,7 +67728,7 @@ Transform:
   - {fileID: 402162007}
   - {fileID: 131975502}
   - {fileID: 1659401976}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1909095731}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2095798431
 PrefabInstance:
@@ -70336,7 +70337,6 @@ SceneRoots:
   - {fileID: 7048530001727361676}
   - {fileID: 931431511}
   - {fileID: 1909095731}
-  - {fileID: 2093793084}
   - {fileID: 1260574556}
   - {fileID: 1111799629}
   - {fileID: 975907339}
