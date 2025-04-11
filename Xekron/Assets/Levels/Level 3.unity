@@ -7095,7 +7095,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0e4f372f23f949c8b3da1f1e8b59fc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 3
+  _health: 4
   _canTakeDamage: 1
   _enemyAmount: 0
   enemyText: {fileID: 4744749758328344378}
@@ -12782,7 +12782,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0e4f372f23f949c8b3da1f1e8b59fc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 3
+  _health: 4
   _canTakeDamage: 1
   _enemyAmount: 0
   enemyText: {fileID: 4744749758328344378}
@@ -36116,7 +36116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0e4f372f23f949c8b3da1f1e8b59fc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 3
+  _health: 4
   _canTakeDamage: 1
   _enemyAmount: 0
   enemyText: {fileID: 4744749758328344378}
@@ -37141,7 +37141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0e4f372f23f949c8b3da1f1e8b59fc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 3
+  _health: 4
   _canTakeDamage: 1
   _enemyAmount: 0
   enemyText: {fileID: 4744749758328344378}
@@ -42489,7 +42489,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0e4f372f23f949c8b3da1f1e8b59fc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 3
+  _health: 4
   _canTakeDamage: 1
   _enemyAmount: 0
   enemyText: {fileID: 4744749758328344378}
@@ -57830,7 +57830,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0e4f372f23f949c8b3da1f1e8b59fc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 3
+  _health: 20
   _canTakeDamage: 1
   _enemyAmount: 0
   enemyText: {fileID: 4744749758328344378}
@@ -62317,7 +62317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0e4f372f23f949c8b3da1f1e8b59fc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 3
+  _health: 4
   _canTakeDamage: 1
   _enemyAmount: 0
   enemyText: {fileID: 4744749758328344378}
@@ -68966,7 +68966,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0e4f372f23f949c8b3da1f1e8b59fc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 3
+  _health: 4
   _canTakeDamage: 1
   _enemyAmount: 0
   enemyText: {fileID: 4744749758328344378}
@@ -69519,7 +69519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0e4f372f23f949c8b3da1f1e8b59fc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 3
+  _health: 4
   _canTakeDamage: 1
   _enemyAmount: 0
   enemyText: {fileID: 4744749758328344378}
@@ -78155,7 +78155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0e4f372f23f949c8b3da1f1e8b59fc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 3
+  _health: 20
   _canTakeDamage: 1
   _enemyAmount: 0
   enemyText: {fileID: 4744749758328344378}
@@ -85246,7 +85246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0e4f372f23f949c8b3da1f1e8b59fc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 3
+  _health: 4
   _canTakeDamage: 1
   _enemyAmount: 0
   enemyText: {fileID: 4744749758328344378}
@@ -90676,6 +90676,10 @@ PrefabInstance:
       propertyPath: timerText
       value: 
       objectReference: {fileID: 3894198483162663770}
+    - target: {fileID: 6247885814997217162, guid: 336f3d2d1cd514204bf91b4a7c2ecd10, type: 3}
+      propertyPath: timeRemaining
+      value: 420
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -90960,6 +90964,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 5638017895435663065}
+    - target: {fileID: 6580757597348577792, guid: 678cba0f9de4c41a4b2b9855c8e5e582, type: 3}
+      propertyPath: _health
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6580757597348577792, guid: 678cba0f9de4c41a4b2b9855c8e5e582, type: 3}
       propertyPath: enemyText
       value: 
