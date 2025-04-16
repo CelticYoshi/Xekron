@@ -10,7 +10,7 @@ public class EnemyMovement : MonoBehaviour
     public AudioClip EnemyHurt;
     public float speed = 1f;
     //public float rangeValue = 5f;
-    public float minDistance = 1.5f;
+    public float minDistance = 0.25f;
     public float maxDistance = 10f;
     //public float rotationSpeed;
     //private Vector3 _startingPosition;
