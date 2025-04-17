@@ -10742,6 +10742,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4896241521240112, guid: 579429fe71610c6458c591e53ae6cb43, type: 3}
   m_PrefabInstance: {fileID: 361231630}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &362826686 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 714359877599006637, guid: e6f795bd1d35c49e0b06b73713aa7107, type: 3}
+  m_PrefabInstance: {fileID: 1316464058603467221}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &371206641
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19642,6 +19647,30 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4961715093905436, guid: d7348193d18053242b67736aafdf8c03, type: 3}
   m_PrefabInstance: {fileID: 625853655}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &628511293 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8987422170187358410, guid: e6f795bd1d35c49e0b06b73713aa7107, type: 3}
+  m_PrefabInstance: {fileID: 1316464058603467221}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &628511301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628511293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0e4f372f23f949c8b3da1f1e8b59fc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: 3
+  _canTakeDamage: 1
+  _enemyAmount: 0
+  enemyText: {fileID: 75658714}
+  damageAmount: 1
+  bloodParticle: {fileID: 362826686}
+  EnemyHurt: {fileID: 8300000, guid: 6a82b5e29ae3e49b9b1df7d78390a67a, type: 3}
 --- !u!1001 &628729863
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68789,6 +68818,14 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 8102592386140548084}
+    - target: {fileID: 714359877599006637, guid: e6f795bd1d35c49e0b06b73713aa7107, type: 3}
+      propertyPath: ShapeModule.type
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 999125548017358419, guid: e6f795bd1d35c49e0b06b73713aa7107, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6940500012960361470, guid: e6f795bd1d35c49e0b06b73713aa7107, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.324751
@@ -68840,7 +68877,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8987422170187358410, guid: e6f795bd1d35c49e0b06b73713aa7107, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 628511301}
   m_SourcePrefab: {fileID: 100100000, guid: e6f795bd1d35c49e0b06b73713aa7107, type: 3}
 --- !u!4 &2016171631647152484 stripped
 Transform:
