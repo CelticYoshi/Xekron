@@ -135,6 +135,12 @@ public class PlayerController : MonoBehaviour
             StartCoroutine(PortalTransition());
                   
         }
+
+        if(other.gameObject.CompareTag("DeathBarrier"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+             
+        }
     
         }
 
