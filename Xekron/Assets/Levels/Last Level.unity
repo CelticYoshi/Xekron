@@ -51576,7 +51576,7 @@ PrefabInstance:
       objectReference: {fileID: 1721091351}
     - target: {fileID: 738979592083236588, guid: 18459d31ff7094d2a8cf9288612c8fa0, type: 3}
       propertyPath: timeRemaining
-      value: 600
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 1419152776500402033, guid: 18459d31ff7094d2a8cf9288612c8fa0, type: 3}
       propertyPath: tractor
@@ -72178,6 +72178,10 @@ PrefabInstance:
       propertyPath: playerHealthText
       value: 
       objectReference: {fileID: 202499060}
+    - target: {fileID: 8919833021631210301, guid: f0cdf62f5e0234d698cfdbb229399f8b, type: 3}
+      propertyPath: moveSpeed
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8919833021631210301, guid: f0cdf62f5e0234d698cfdbb229399f8b, type: 3}
       propertyPath: _playerAnimation
       value: 

@@ -68899,6 +68899,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 196556928113675607, guid: ba934706940954958a2a346cae14b1ff, type: 3}
+      propertyPath: moveSpeed
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1365776642249119322, guid: ba934706940954958a2a346cae14b1ff, type: 3}
       propertyPath: playerHealthText
       value: 
@@ -69156,7 +69160,7 @@ PrefabInstance:
       objectReference: {fileID: 261877880}
     - target: {fileID: 738979592083236588, guid: 18459d31ff7094d2a8cf9288612c8fa0, type: 3}
       propertyPath: timeRemaining
-      value: 600
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1419152776500402033, guid: 18459d31ff7094d2a8cf9288612c8fa0, type: 3}
       propertyPath: tractor
