@@ -6924,7 +6924,7 @@ MonoBehaviour:
   bloodParticle: {fileID: 77664186}
   speed: 10
   minDistance: 1.5
-  maxDistance: 10
+  maxDistance: 15
   player: {fileID: 957358805427219141}
   _enemyAnimation: {fileID: 162092125}
 --- !u!114 &162092120
@@ -7048,7 +7048,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 4.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -12601,7 +12601,7 @@ MonoBehaviour:
   bloodParticle: {fileID: 605521850}
   speed: 10
   minDistance: 1.5
-  maxDistance: 10
+  maxDistance: 15
   player: {fileID: 957358805427219141}
   _enemyAnimation: {fileID: 314377985}
 --- !u!114 &314377980
@@ -12725,7 +12725,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 4.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -35935,7 +35935,7 @@ MonoBehaviour:
   bloodParticle: {fileID: 1861195944}
   speed: 10
   minDistance: 1.5
-  maxDistance: 10
+  maxDistance: 15
   player: {fileID: 957358805427219141}
   _enemyAnimation: {fileID: 912672929}
 --- !u!114 &912672924
@@ -36059,7 +36059,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 4.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -36960,7 +36960,7 @@ MonoBehaviour:
   bloodParticle: {fileID: 1764328975}
   speed: 10
   minDistance: 1.5
-  maxDistance: 10
+  maxDistance: 15
   player: {fileID: 957358805427219141}
   _enemyAnimation: {fileID: 927696854}
 --- !u!114 &927696849
@@ -37084,7 +37084,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 4.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -42214,7 +42214,7 @@ MonoBehaviour:
   bloodParticle: {fileID: 824947379}
   speed: 10
   minDistance: 1.5
-  maxDistance: 10
+  maxDistance: 15
   player: {fileID: 957358805427219141}
   _enemyAnimation: {fileID: 1047634624}
 --- !u!114 &1047634619
@@ -42338,7 +42338,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 4.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -57313,7 +57313,7 @@ MonoBehaviour:
   bloodParticle: {fileID: 1614911350}
   speed: 10
   minDistance: 1.5
-  maxDistance: 10
+  maxDistance: 15
   player: {fileID: 957358805427219141}
   _enemyAnimation: {fileID: 1419907989}
 --- !u!114 &1419907984
@@ -57437,7 +57437,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 5.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -68241,7 +68241,7 @@ MonoBehaviour:
   bloodParticle: {fileID: 1824593285}
   speed: 10
   minDistance: 1.5
-  maxDistance: 10
+  maxDistance: 15
   player: {fileID: 957358805427219141}
   _enemyAnimation: {fileID: 1660488497}
 --- !u!114 &1660488492
@@ -68365,7 +68365,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 4.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -68794,7 +68794,7 @@ MonoBehaviour:
   bloodParticle: {fileID: 451781212}
   speed: 10
   minDistance: 1.5
-  maxDistance: 10
+  maxDistance: 15
   player: {fileID: 957358805427219141}
   _enemyAnimation: {fileID: 1666506113}
 --- !u!114 &1666506108
@@ -68918,7 +68918,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 4.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -84313,7 +84313,7 @@ MonoBehaviour:
   bloodParticle: {fileID: 1741411374}
   speed: 10
   minDistance: 1.5
-  maxDistance: 10
+  maxDistance: 15
   player: {fileID: 957358805427219141}
   _enemyAnimation: {fileID: 2005236614}
 --- !u!114 &2005236609
@@ -84437,7 +84437,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 4.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -89878,10 +89878,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character_Sheriff_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4075165716827665083, guid: 6a1f257d801974cc29423ce5baa9a0f9, type: 3}
+      propertyPath: m_Speed
+      value: 5.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6449973147392258607, guid: 6a1f257d801974cc29423ce5baa9a0f9, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 957358805427219141}
+    - target: {fileID: 6449973147392258607, guid: 6a1f257d801974cc29423ce5baa9a0f9, type: 3}
+      propertyPath: maxDistance
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 6789760027746658747, guid: 6a1f257d801974cc29423ce5baa9a0f9, type: 3}
       propertyPath: enemyText
       value: 
@@ -89916,6 +89924,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 957358805427219141}
+    - target: {fileID: 1391933511128977113, guid: 2e1f5ae218c304507ad1a292b9b41c36, type: 3}
+      propertyPath: maxDistance
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 2837962698903320474, guid: 2e1f5ae218c304507ad1a292b9b41c36, type: 3}
       propertyPath: enemyText
       value: 
@@ -89964,6 +89976,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 5638017895435663065}
+    - target: {fileID: 8122739190806096937, guid: 2e1f5ae218c304507ad1a292b9b41c36, type: 3}
+      propertyPath: m_Speed
+      value: 4.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -89992,6 +90008,10 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 5638017895435663065}
+    - target: {fileID: 3480370775151796304, guid: 5a0b00bd5de8d4245a205b5142946368, type: 3}
+      propertyPath: m_Speed
+      value: 4.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3648630316221733247, guid: 5a0b00bd5de8d4245a205b5142946368, type: 3}
       propertyPath: enemyText
       value: 
@@ -90044,6 +90064,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 957358805427219141}
+    - target: {fileID: 5594596110453060496, guid: 5a0b00bd5de8d4245a205b5142946368, type: 3}
+      propertyPath: maxDistance
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
