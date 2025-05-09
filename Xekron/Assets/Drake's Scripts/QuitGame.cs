@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class QuitGame : MonoBehaviour
 {
+    float countdown = 3;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,9 +14,27 @@ public class QuitGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if(Input.GetKey(KeyCode.Escape))
         {
-            Application.Quit();
+            
+            if(countdown > 0)
+            {
+                Debug.Log ("Pressing the escape key" + countdown);
+                countdown -= Time.deltaTime;
+
+                if(countdown <= 0)
+                {
+                    Debug.Log ("Exiting the game");
+                    Application.Quit();
+                }
+            }
+            
+            
+        }
+
+        if(Input.GetKeyUp(KeyCode.Escape))
+        {
+            countdown = 3;
         }
     }
 
